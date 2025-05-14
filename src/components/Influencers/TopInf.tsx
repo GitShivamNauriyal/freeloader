@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const experiences = [
@@ -29,11 +27,9 @@ const TopInfluencers = () => {
             {/* Top Section: Heading and Text */}
             <div className="grid grid-cols-1 mt-16 md:grid-cols-2 gap-6 lg:gap-0 px-4 md:px-16 max-w-screen-xl mx-auto relative">
                 {/* Background Prop Image */}
-                <Image
+                <img
                     src="/assets/images/TangibleBgProp.png"
                     alt="Tangible Background Prop"
-                    width={200}
-                    height={200}
                     className="absolute -top-8 left-4 w-32 h-32 object-contain z-0 opacity-100"
                 />
 
@@ -83,10 +79,9 @@ const TopInfluencers = () => {
                         className="text-white border rounded lg:border-0 pb-2"
                     >
                         <div className="relative w-full aspect-[3/2] rounded-md overflow-hidden">
-                            <Image
+                            <img
                                 src={item.image}
                                 alt={item.title}
-                                fill
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 33vw, 300px"
                                 className="object-cover"
                             />

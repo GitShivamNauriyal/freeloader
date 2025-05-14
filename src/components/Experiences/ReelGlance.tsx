@@ -1,6 +1,4 @@
 "use client";
-import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const ReelGlance = () => {
@@ -37,11 +35,9 @@ const ReelGlance = () => {
                                 muted
                                 playsInline
                             />
-                            <Image
+                            <img
                                 src="/assets/images/PhoneFrame.png"
                                 alt={`Work Glance`}
-                                fill
-                                priority
                                 className="object-contain rounded-xl z-10 pointer-events-none"
                             />
                         </div>

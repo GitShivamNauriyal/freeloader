@@ -1,6 +1,4 @@
 "use client";
-import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const experiences = [
@@ -46,7 +44,7 @@ const Merchandise = () => {
                     transition={{ delay: 0, ease: "easeIn", duration: 0.4 }}
                 >
                     {/* Background Prop Image */}
-                    <Image
+                    <img
                         src="/assets/images/TangibleBgProp.png"
                         alt="Tangible Background Prop"
                         width={200}
@@ -94,11 +92,9 @@ const Merchandise = () => {
                             duration: 0.4,
                         }}
                     >
-                        <Image
+                        <img
                             src={item.image}
                             alt={item.title}
-                            width={200}
-                            height={200}
                             className="w-full h-auto object-cover rounded-md"
                         />
                         <h3 className="text-lg font-bold mt-4 pl-2 freeheading">

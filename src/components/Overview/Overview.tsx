@@ -5,10 +5,12 @@ import TangibleGap from "./TangibleGap";
 import OverviewVideoPlayback from "./VideoPlayback_1";
 import OverviewVideoPlayback_2 from "./VideoPlayback_2";
 import History from "./History";
+import HeroSection from "./HeroSection";
 
 const Overview = () => {
     return (
         <div>
+            <HeroSection />
             <History />
             <OverviewVideoPlayback />
             <TangibleGap />

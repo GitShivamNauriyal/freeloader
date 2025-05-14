@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const ExperienceMarketingSection = () => {
@@ -16,11 +14,9 @@ const ExperienceMarketingSection = () => {
                     className="max-w-2xl md:w-2/3 relative"
                 >
                     {/* Background Prop Image */}
-                    <Image
+                    <img
                         src="/assets/images/TangibleBgProp.png"
                         alt="Tangible Background Prop"
-                        width={200}
-                        height={200}
                         className="absolute -top-8 -left-16 w-32 h-32 object-contain z-0 opacity-80"
                     />
 
@@ -102,11 +98,9 @@ const ExperienceMarketingSection = () => {
 
                         {/* Rotated Phone Frame */}
                         <div className="absolute inset-0 z-10 pointer-events-none">
-                            <Image
+                            <img
                                 src="/assets/images/PhoneFrameRotated.png"
                                 alt="Work Glance"
-                                fill
-                                priority
                                 className="object-contain rounded-xl"
                             />
                         </div>

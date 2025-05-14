@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export default function MerchSubsection() {
@@ -33,7 +33,7 @@ export default function MerchSubsection() {
                     transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
                 >
                     <Link
-                        href="https://future-culture-next-js-frontend.vercel.app/"
+                        to="https://future-culture-next-js-frontend.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="inline-block px-6 py-3 text-sm font-semibold rounded-md bg-violet-600 hover:bg-violet-700 hover:-translate-y-1 text-white transition"

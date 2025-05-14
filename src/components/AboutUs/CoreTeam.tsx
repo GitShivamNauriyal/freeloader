@@ -1,6 +1,4 @@
 "use client";
-import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const experiences = [
@@ -37,11 +35,9 @@ const CoreTeam = () => {
                 className="px-4 md:px-16 mt-16 max-w-screen-xl mx-auto"
             >
                 <div className="flex items-start md:items-center justify-start relative">
-                    <Image
+                    <img
                         src="/assets/images/TangibleBgProp.png"
                         alt="Tangible Background Prop"
-                        width={200}
-                        height={200}
                         className="absolute -top-8 -left-16 w-32 h-32 object-contain z-0 opacity-100"
                     />
                     <h2 className="text-5xl sm:text-6xl font-bold leading-10 z-10">
@@ -67,9 +63,7 @@ const CoreTeam = () => {
                         }}
                         className="text-white border border-white/20 rounded lg:border-0 pb-2"
                     >
-                        <Image
-                            width={200}
-                            height={200}
+                        <img
                             src={item.image}
                             alt={item.title}
                             className="w-full h-auto object-cover rounded-md"

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 const clients = Array.from(
@@ -23,12 +22,7 @@ export default function ClientsSection() {
                                 key={i}
                                 className="mx-6 flex items-center justify-center"
                             >
-                                <Image
-                                    src={src}
-                                    alt={`Client ${i + 1}`}
-                                    width={100}
-                                    height={100}
-                                />
+                                <img src={src} alt={`Client ${i + 1}`} />
                             </div>
                         ))}
                     </Marquee>

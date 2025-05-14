@@ -1,6 +1,5 @@
 "use client";
-import Link from "next/link";
-import React from "react";
+import { Link } from "react-router-dom";
 import { FaArrowDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -19,7 +18,7 @@ const MidHeading = () => {
             </motion.h1>
 
             {/* Arrow and "Showreel" text */}
-            <Link href="#exp-reel">
+            <Link to="#exp-reel">
                 <div className="mt-4 lg:mt-6 flex flex-col items-center">
                     <span className="text-[#5e17eb] font-medium">Showreel</span>
                     <FaArrowDown className="text-cyan-500 mb-1" />

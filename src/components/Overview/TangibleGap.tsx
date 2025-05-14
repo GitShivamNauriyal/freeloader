@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import React from "react";
 import { motion } from "framer-motion";
 
 const TangibleGap = () => {
@@ -16,11 +14,9 @@ const TangibleGap = () => {
                     className="max-w-2xl relative font-[freepara]"
                 >
                     {/* Background Prop Image */}
-                    <Image
+                    <img
                         src="/assets/images/TangibleBgProp.png"
                         alt="Tangible Background Prop"
-                        width={200}
-                        height={200}
                         className="absolute -top-8 -left-16 w-32 h-32 object-contain z-0 opacity-80"
                     />
 
@@ -102,11 +98,9 @@ const TangibleGap = () => {
                             muted
                             playsInline
                         />
-                        <Image
+                        <img
                             src="/assets/images/PhoneFrame.png"
                             alt={`Work Glance`}
-                            fill
-                            priority
                             className="object-contain rounded-xl z-10 pointer-events-none"
                         />
                     </div>

@@ -1,6 +1,4 @@
 "use client";
-import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const MerchGlance = () => {
@@ -33,11 +31,9 @@ const MerchGlance = () => {
                                 muted
                                 playsInline
                             />
-                            <Image
+                            <img
                                 src="/assets/images/PhoneFrame.png"
                                 alt={`Merch Glance ${num}`}
-                                fill
-                                priority
                                 className="object-contain rounded-xl z-10 pointer-events-none"
                             />
                         </div>

@@ -1,7 +1,5 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const experiences = [
@@ -32,7 +30,7 @@ const BrandExperiences = () => {
         <section className="w-full py-16">
             {/* Top Section */}
             <div className="grid grid-cols-1 my-16 lg:grid-cols-2 gap-6 lg:gap-8 px-4 md:px-16 max-w-screen-xl mx-auto relative">
-                <Image
+                <img
                     src="/assets/images/TangibleBgProp.png"
                     alt="Tangible Background Prop"
                     width={200}
@@ -82,7 +80,7 @@ const BrandExperiences = () => {
                         whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
                         transition={{ delay: index * 0.1, duration: 0.4 }}
                     >
-                        <Image
+                        <img
                             src={item.image}
                             alt={item.title}
                             width={200}

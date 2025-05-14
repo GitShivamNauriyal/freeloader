@@ -1,6 +1,4 @@
 "use client";
-import React from "react";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
 const imageList = Array.from(
@@ -68,7 +66,7 @@ const PartnerAllianceSection = () => {
                                 ease: "easeOut",
                             }}
                         >
-                            <Image
+                            <img
                                 src={image}
                                 width={300}
                                 height={300}
