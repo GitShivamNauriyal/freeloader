@@ -11,7 +11,10 @@ const imageList = Array.from(
 
 const page = () => {
     return (
-        <div style={{ fontFamily: "AgrandirWide, sans-serif" }}>
+        <div
+            //  style={{ fontFamily: "AgrandirWide, sans-serif" }}
+            className="w-100vw"
+        >
             <TopInfluencers />
             <MidHeading />
             <GallerySection

@@ -35,7 +35,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Desktop Menu */}
-                    <ul className="hidden md:flex items-center space-x-8 font-[freepara] uppercase text-white text-sm">
+                    <ul className="hidden md:flex items-center space-x-8 font-[freeheading] uppercase text-white text-sm">
                         {menuItems.map(({ label, path }) => (
                             <li key={path} className="relative group">
                                 <Link
