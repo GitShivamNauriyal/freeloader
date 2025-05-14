@@ -2,10 +2,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AboutUs from "./components/AboutUs/AboutUs";
 import Navbar from "./components/common/Navbar";
-import Overview from "./pages/Overview";
-import Experiences from "./pages/Experiences";
-import ExperiencialGifting from "./pages/ExperiencialGifting";
-import Influencers from "./pages/Influencers";
+import Overview from "./components/Overview/Overview";
+import Experiences from "./components/Experiences/Experiences";
+import ExperiencialGifting from "./components/ExperiencialGifting/ExperiencialGifting";
+import Influencers from "./components/Influencers/Influencers";
 
 const App = () => {
     return (

@@ -1,15 +1,6 @@
-"use client";
-
 import { motion } from "framer-motion";
-// import ClientsSection from "../About/ClientsSection";
-// import ExperienceMarketingSection from "../Overview/ExpMarket";
-// import Process from "../Overview/Process";
-// import TangibleGap from "../Overview/TangibleGap";
-// import OverviewVideoPlayback from "../Overview/VideoPlayback_1";
-// import OverviewVideoPlayback_2 from "../Overview/VideoPlayback_2";
-// import History from "../Overview/History";
+import { Link } from "react-router-dom"; // React Router link
 
-// Move animation props outside JSX for optimization
 const motionSpanProps = {
     initial: { opacity: 0, y: 10 },
     whileInView: { opacity: 1, y: 0 },
@@ -26,16 +17,10 @@ const HeroSection = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{ once: false, amount: 0.2 }}
                 className="w-full md:min-h-[500px] h-[50vh] lg:h-[90vh] mt-16 flex flex-col justify-between px-4 lg:px-12 py-10 hero-container"
-                // style={{
-                //     backgroundImage:
-                //         "repeating-linear-gradient(45deg, #5e17eb 1px, #6e47ee66 10px, #5915dc66 10px, #5328ac33 20px)",
-                //     backgroundSize: "auto",
-                //     backgroundRepeat: "repeat",
-                // }}
             >
                 <video
                     className="absolute top-0 left-0 w-full h-full object-cover -z-10"
-                    src="/assets/video/hero_bg.webm"
+                    src="/assets/video/hero_bg.webm" // ensure this is public or use relative import
                     autoPlay
                     loop
                     muted
@@ -55,7 +40,7 @@ const HeroSection = () => {
                     </h1>
                     <p className="text-sm sm:text-lg font-light tracking-[4px] text-gray-300 mt-2 freeheading flex flex-wrap gap-1">
                         <motion.span {...motionSpanProps}>
-                            <Link href="/experiences">EXPERIENCES</Link>
+                            <Link to="/experiences">EXPERIENCES</Link>
                         </motion.span>
                         <span className="mx-1">•</span>
                         <motion.span
@@ -65,7 +50,7 @@ const HeroSection = () => {
                                 delay: 0.3,
                             }}
                         >
-                            <Link href="/experiencial-gifting">
+                            <Link to="/experiencial-gifting">
                                 EXPERIENCIAL GIFTING
                             </Link>
                         </motion.span>
@@ -77,7 +62,7 @@ const HeroSection = () => {
                                 delay: 0.6,
                             }}
                         >
-                            <Link href="/influencers">INFLUENCERS</Link>
+                            <Link to="/influencers">INFLUENCERS</Link>
                         </motion.span>
                     </p>
                 </div>
@@ -93,16 +78,6 @@ const HeroSection = () => {
                     BRANDS
                 </motion.h2>
             </div>
-
-            {/* Other sections */}
-            {/* <Creation /> */}
-            {/* <History />
-            <OverviewVideoPlayback />
-            <TangibleGap />
-            <ClientsSection />
-            <ExperienceMarketingSection />
-            <Process />
-            <OverviewVideoPlayback_2 /> */}
         </div>
     );
 };
