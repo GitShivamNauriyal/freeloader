@@ -23,7 +23,7 @@ const experiences = [
 
 const TopInfluencers = () => {
     return (
-        <section className="w-full py-16">
+        <section className="w-full pb-16">
             {/* Top Section: Heading and Text */}
             <div className="grid grid-cols-1 mt-16 md:grid-cols-2 gap-6 lg:gap-0 px-4 md:px-16 max-w-screen-xl mx-auto relative">
                 {/* Background Prop Image */}

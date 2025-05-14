@@ -12,7 +12,7 @@ export default function Footer() {
         <footer className="bg-black text-white px-6 md:px-12 lg:px-24 py-16">
             <div
                 className="grid gap-10 md:grid-cols-3"
-                style={{ fontFamily: "AgrandirWide, sans-serif" }}
+                // style={{ fontFamily: "AgrandirWide, sans-serif" }}
             >
                 {/* Left - Brand */}
                 <div>

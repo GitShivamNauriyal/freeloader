@@ -6,6 +6,7 @@ import Overview from "./components/Overview/Overview";
 import Experiences from "./components/Experiences/Experiences";
 import ExperiencialGifting from "./components/ExperiencialGifting/ExperiencialGifting";
 import Influencers from "./components/Influencers/Influencers";
+import Footer from "./components/common/Footer";
 
 const App = () => {
     return (
@@ -24,6 +25,7 @@ const App = () => {
                         <Route path="/about-us" element={<AboutUs />} />
                     </Routes>
                 </main>
+                <Footer />
             </div>
         </Router>
     );

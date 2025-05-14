@@ -33,7 +33,7 @@ const experiences = [
 
 const Merchandise = () => {
     return (
-        <section className="w-full py-16">
+        <section className="w-full pb-16">
             {/* Top Section: Grid for Heading and Text */}
             <div className="grid grid-cols-1 lg:grid-cols-3 mt-16 gap-6 lg:gap-0 px-4 md:px-16 max-w-screen-xl mx-auto">
                 {/* Left - Title */}
