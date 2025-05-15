@@ -91,7 +91,7 @@ export default function GalleryCarousel({
 
     return (
         <section className="max-w-5xl mx-auto px-4 py-12 md:py-20">
-            <h2 className="text-3xl md:text-5xl font-semibold text-gray-900 mb-6">
+            <h2 className="text-3xl md:text-5xl font-semibold text-neutral-100 mb-6">
                 {title}
             </h2>
             <hr className="border-t border-gray-300 mb-10" />

@@ -29,8 +29,8 @@ const HeroSection = () => {
                 <div /> {/* Spacer */}
                 <div className="text-left pl-2 md:pl-8">
                     <h1
-                        className="z-10 text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-[900] leading-[0.8] tracking-[0.1rem] text-white font-freelogo freelogo"
-                        style={{ fontFamily: "AgrandirWide, sans-serif" }}
+                        className="z-10 text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-[900] leading-[0.8] tracking-[0.1rem] text-white font-[AgrandirHeavy]"
+                        // style={{ fontFamily: "AgrandirWide, sans-serif" }}
                     >
                         FREE
                         <br />
@@ -38,7 +38,7 @@ const HeroSection = () => {
                         <br />
                         AGENCY
                     </h1>
-                    <p className="text-sm sm:text-lg font-light tracking-[4px] text-gray-300 mt-2 freeheading flex flex-wrap gap-1">
+                    <p className="text-sm sm:text-lg font-light tracking-wide text-gray-300 mt-2 font-[freeheading] flex flex-wrap gap-1">
                         <motion.span {...motionSpanProps}>
                             <Link to="/experiences">EXPERIENCES</Link>
                         </motion.span>

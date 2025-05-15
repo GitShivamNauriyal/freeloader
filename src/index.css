@@ -8,22 +8,21 @@
 }
 
 @font-face {
-    font-family: "freelogo";
-    src: url("/src/assets/fonts/agrandir-wide.ttf") format("truetype");
-    font-weight: 800;
+    font-family: "AgrandirHeavy";
+    src: url("/src/assets/fonts/Agrandir-GrandHeavy.otf") format("opentype");
     font-style: normal;
 }
 
 @font-face {
     font-family: "freeheading";
     src: url("/src/assets/fonts/BDSans-Regular.ttf") format("truetype");
-    font-weight: 400;
+    font-weight: bolder;
     font-style: normal;
 }
 
 @font-face {
     font-family: "freepara";
-    src: url("/src/assets/fonts/TelegrafRegular.otf") format("otf");
+    src: url("/src/assets/fonts/TelegrafRegular.otf") format("opentype");
     font-weight: normal;
     font-style: normal;
 }

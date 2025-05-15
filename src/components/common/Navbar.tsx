@@ -19,11 +19,10 @@ const Navbar = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
-                    <div className="flex-shrink-0">
+                    <div className="flex-shrink-0 font-[AgrandirWide]">
                         <Link
                             to="/"
-                            className="text-white text-xl font-extrabold glitch-container"
-                            style={{ fontFamily: "AgrandirWide, sans-serif" }}
+                            className="text-white text-xl font-extrabold glitch-container "
                         >
                             <div className="glitch-text translate-y-1">
                                 FREE
