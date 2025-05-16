@@ -22,15 +22,19 @@ const Navbar = () => {
                     <div className="flex-shrink-0 font-[AgrandirWide]">
                         <Link
                             to="/"
-                            className="text-white text-xl font-extrabold glitch-container "
+                            className="text-white text-xl font-extrabold"
                         >
-                            <div className="glitch-text translate-y-1">
-                                FREE
-                            </div>
-                            <div className="glitch-text -translate-y-1">
-                                LOADER
-                            </div>
+                            <div className="translate-y-1">FREE</div>
+                            <div className="-translate-y-1">LOADER</div>
                         </Link>
+                        {/* <Link
+                            to="/"
+                            className="text-white text-xl font-extrabold leading-4"
+                        >
+                            <div className="translate-y-">FREE</div>
+                            <div className="-translate-y-">LOADER</div>
+                            <div className="-translate-y-">AGENCY</div>
+                        </Link> */}
                     </div>
 
                     {/* Desktop Menu */}

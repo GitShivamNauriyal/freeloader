@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const TangibleGap = () => {
     return (
-        <div className="bg-white w-full py-16 px-4">
+        <div className="bg-white w-full py-16 px-4 overflow-hidden">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
                 {/* Text Content */}
                 <motion.div
@@ -25,17 +25,19 @@ const TangibleGap = () => {
                         initial={{ opacity: 0, y: -20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="relative z-10 freelogo font-extrabold freeheading"
+                        className="relative z-10 font-[AgrandirHeavy] font-extrabold"
                     >
                         <div className="flex items-center gap-2">
-                            <h2 className="text-4xl lg:text-7xl font-extrabold leading-4 text-black/80">
+                            <h2 className="text-2xl lg:text-6xl font-extrabold leading-tight text-black/80">
                                 THE
                             </h2>
-                            <span className="bg-[#5e17eb] text-sm md:text-2xl text-white px-2 lg:px-4 py-2 font-bold text-md rounded-md">
-                                WE HAVE A REAL PROBLEM
+                            <span className="bg-[#5e17eb] -translate-y-0.5 font-[AgrandirWide] flex items-center justify-center text-xs md:text-xl text-white px-2 lg:px-4 py-2 font-bold text-md rounded-sm">
+                                <p className="leading-none translate-y-0.5">
+                                    WE HAVE A REAL PROBLEM
+                                </p>
                             </span>
                         </div>
-                        <h2 className="text-4xl lg:text-7xl font-extrabold text-black/80">
+                        <h2 className="text-2xl lg:text-6xl font-extrabold text-black/80">
                             TANGIBLE GAP
                         </h2>
                     </motion.div>
@@ -45,7 +47,7 @@ const TangibleGap = () => {
                         initial={{ opacity: 0, x: -20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="mt-4 text-[#2a1114] text-base md:text-lg leading-5 md:leading-tight"
+                        className="mt-4 text-neutral-700 text-sm md:text-lg leading-4 md:leading-tight"
                     >
                         In an all digital era, brands are beginning to lose
                         tangible connection with their audience at an ever
@@ -56,7 +58,7 @@ const TangibleGap = () => {
                         initial={{ opacity: 0, x: -20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="mt-4 text-[#2a1114] text-base md:text-lg leading-5 md:leading-tight"
+                        className="mt-4 text-neutral-700 text-sm md:text-lg leading-4 md:leading-tight"
                     >
                         Instead of reactive & ad-hoc solutions to reconnect with
                         the audience, the demand for well thought out
@@ -68,7 +70,7 @@ const TangibleGap = () => {
                         initial={{ opacity: 0, x: -20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="mt-4 text-[#2a1114] text-base md:text-lg leading-5 md:leading-tight"
+                        className="mt-4 text-neutral-700 font-[freepara] text-sm md:text-lg leading-4 md:leading-tight"
                     >
                         Since 2009, we at FIC have constantly evolved towards
                         innovating and building new age{" "}
@@ -89,21 +91,33 @@ const TangibleGap = () => {
                         duration: 0.6,
                     }}
                 >
-                    <div className="relative w-64 md:w-80 aspect-[1/2]">
-                        <video
-                            src={`/assets/video/tangible_gap.mp4`}
-                            className="absolute inset-0 left-2 w-[94%] h-full object-cover rounded-4xl z-0"
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                        />
-                        <img
-                            src="/assets/images/PhoneFrame.png"
-                            alt={`Work Glance`}
-                            className="object-contain rounded-xl z-10 pointer-events-none"
-                        />
-                    </div>
+                    <motion.div
+                        className="flex flex-col translate-y-32"
+                        initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
+                        whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
+                        transition={{
+                            ease: "easeIn",
+                            duration: 0.6,
+                        }}
+                    >
+                        <div className="relative w-64 md:w-80 aspect-[1/2]">
+                            {/* Video goes first, behind */}
+                            <video
+                                src={`/assets/video/tangible_gap.mp4`}
+                                className="absolute inset-0 w-[93%] left-2 h-full object-cover rounded-4xl z-0"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                            />
+                            {/* Phone frame image overlays the video */}
+                            <img
+                                src="/assets/images/PhoneFrame.png"
+                                alt="Work Glance"
+                                className="absolute inset-0 w-full h-full object-contain rounded-xl z-10 pointer-events-none"
+                            />
+                        </div>
+                    </motion.div>
                 </motion.div>
             </div>
         </div>

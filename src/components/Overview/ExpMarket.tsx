@@ -11,7 +11,7 @@ const ExperienceMarketingSection = () => {
                     initial={{ opacity: 0, x: -30, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
-                    className="max-w-2xl md:w-2/3 relative"
+                    className="max-w-2xl md:w-2/3 relative font-[freepara]"
                 >
                     {/* Background Prop Image */}
                     <img
@@ -25,11 +25,11 @@ const ExperienceMarketingSection = () => {
                         initial={{ opacity: 0, y: -20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="text-4xl md:text-7xl font-extrabold text-black/80 leading-10 md:leading-[4rem] mb-6 z-10 freeheading"
+                        className="text-3xl md:text-6xl font-extrabold text-black/80 leading-8 md:leading-[4rem] mb-6 z-10 font-[AgrandirHeavy]"
                     >
                         <div className="relative inline-block z-10">
                             <span>EXPERIENCE</span>
-                            <div className="absolute -top-4 -right-12 rotate-8 bg-[#5e17eb] text-white font-semibold px-4 py-1 text-xs sm:text-base shadow-lg rounded-lg">
+                            <div className="absolute font-[AgrandirWide] -top-4 -right-12 rotate-8 bg-[#5e17eb] text-white font-semibold px-4 py-1 text-xs sm:text-base shadow-lg rounded-md">
                                 OUR SOLUTION
                             </div>
                         </div>
@@ -42,7 +42,7 @@ const ExperienceMarketingSection = () => {
                         initial={{ opacity: 0, x: -20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="mt-4 text-[#2a1114] text-base md:text-lg leading-5 md:leading-tight"
+                        className="mt-4 text-neutral-700 text-base md:text-lg leading-4 md:leading-tight"
                     >
                         Experience Marketing is our way to solve various
                         problems faced by brands today, from reduced brand
@@ -53,7 +53,7 @@ const ExperienceMarketingSection = () => {
                         initial={{ opacity: 0, x: -20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="mt-4 text-[#2a1114] text-base md:text-lg leading-5 md:leading-tight"
+                        className="mt-4 text-neutral-700 text-base md:text-lg leading-4 md:leading-tight"
                     >
                         As per our philosophy, a brand experience takes place
                         when your audience makes a tangible & physical contact
@@ -67,7 +67,7 @@ const ExperienceMarketingSection = () => {
                         initial={{ opacity: 0, x: -20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="mt-4 text-[#2a1114] text-base md:text-lg leading-5 md:leading-tight"
+                        className="mt-4 text-neutral-700 text-sm md:text-lg leading-4 md:leading-tight"
                     >
                         It is in that moment when your audience experiences your
                         brand with full attention and their whole being.
@@ -85,7 +85,7 @@ const ExperienceMarketingSection = () => {
                 >
                     <div className="relative w-80 sm:w-96 md:w-xl aspect-[2/1] mx-auto">
                         {/* Video Layer */}
-                        <div className="absolute inset-0 h-[95%] top-2 z-0">
+                        <div className="absolute inset-0 h-[94%] top-2 z-0">
                             <video
                                 src={`/assets/video/exp_marketing.mp4`}
                                 className="w-full h-full object-cover rounded-4xl"

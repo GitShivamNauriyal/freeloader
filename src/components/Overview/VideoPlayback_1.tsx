@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const OverviewVideoPlayback = () => {
     return (
-        <div className="relative w-full h-[90vh] lg:h-screen overflow-hidden">
+        <div className="relative w-full h-[40vh] lg:h-[70vh] overflow-hidden">
             {/* Background Video */}
             <video
                 autoPlay

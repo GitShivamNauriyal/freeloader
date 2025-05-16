@@ -10,7 +10,7 @@ const History = () => {
                     initial={{ filter: "blur(30px)" }}
                     whileInView={{ filter: "blur(0px)" }}
                     transition={{ duration: 0.4 }}
-                    className="font-[freeheading] font-extrabold px-10 md:px-20 lg:px-28 max-w-screen-xl text-3xl sm:text-5xl  lg:text-7xl  text-left md:text-center freeheading text-white leading-7 sm:leading-12 md:leading-12 lg:leading-16 tracking-normal uppercase"
+                    className="font-[AgrandirHeavy] font-extrabold px-4 md:px-20 lg:px-24 max-w-screen-xl text-3xl sm:text-5xl  lg:text-7xl  text-left md:text-center freeheading text-white leading-7 sm:leading-12 md:leading-12 lg:leading-16 tracking-normal uppercase"
                 >
                     CREATING TANGIBLE
                     {/* <br /> */}

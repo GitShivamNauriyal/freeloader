@@ -16,7 +16,7 @@ const HeroSection = () => {
                 whileInView={{ filter: "blur(0px)", opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: false, amount: 0.2 }}
-                className="w-full md:min-h-[500px] h-[50vh] lg:h-[90vh] flex flex-col justify-between px-4 lg:px-12 py-10 hero-container"
+                className="w-full md:min-h-[500px] h-[40vh] lg:h-[90vh] flex flex-col justify-between px-4 lg:px-12 py-10 hero-container"
             >
                 <video
                     className="absolute top-0 left-0 w-full h-full object-cover -z-10 -scale-x-100"
@@ -28,10 +28,7 @@ const HeroSection = () => {
                 />
                 <div /> {/* Spacer */}
                 <div className="text-left pl-2 md:pl-8">
-                    <h1
-                        className="z-10 text-7xl sm:text-8xl md:text-9xl lg:text-[10rem] font-[900] leading-[0.8] tracking-[0.1rem] text-white font-[AgrandirHeavy]"
-                        // style={{ fontFamily: "AgrandirWide, sans-serif" }}
-                    >
+                    <h1 className="z-10 text-5xl sm:text-8xl md:text-9xl lg:text-[8rem] font-[900] leading-[0.9] tracking-[0.1rem] text-white font-[AgrandirHeavy]">
                         FREE
                         <br />
                         LOADER
@@ -68,7 +65,7 @@ const HeroSection = () => {
                 </div>
             </motion.main>
 
-            <div className="w-screen bg-cyan-400 text-[#5e17eb] font-bold tracking-wider text-center freelogo py-4 px-4 text-sm sm:text-lg lg:text-2xl">
+            <div className="w-screen bg-cyan-400 text-[#5e17eb] font-bold tracking-wider text-center font-[AgrandirWide] py-4 px-4 text-sm sm:text-lg lg:text-2xl">
                 <motion.h2
                     initial={{ x: 20, filter: "blur(10px)" }}
                     whileInView={{ x: 0, filter: "blur(0px)" }}
