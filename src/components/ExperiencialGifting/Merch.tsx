@@ -35,7 +35,7 @@ const Merchandise = () => {
     return (
         <section className="w-full pb-16">
             {/* Top Section: Grid for Heading and Text */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 mt-16 gap-6 lg:gap-0 px-4 md:px-16 max-w-screen-xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-3 mt-16 gap-4 md:gap-6 lg:gap-0 px-4 md:px-16 max-w-screen-xl mx-auto">
                 {/* Left - Title */}
                 <motion.div
                     className="flex lg:col-span-2 items-start md:items-center justify-start relative"
@@ -51,8 +51,8 @@ const Merchandise = () => {
                         height={200}
                         className="absolute -top-8 -left-10 w-32 h-32 object-contain z-0 opacity-100"
                     />
-                    <h2 className="text-5xl sm:text-6xl font-bold leading-12 lg:leading-16 z-10">
-                        <span className="block text-4xl italic font-medium mb-0.5">
+                    <h2 className="font-[AgrandirWide] text-4xl md:text-6xl font-bold leading-10 md:leading-16 z-10">
+                        <span className="block text-2xl md:text-4xl italic leading-6 md:leading-normal font-medium mb-0.5 pr-4">
                             Customised & Personalised
                         </span>
                         EXPERIENCIAL GIFTING
@@ -61,12 +61,12 @@ const Merchandise = () => {
 
                 {/* Right - Description */}
                 <motion.div
-                    className="flex flex-col justify-center text-white"
+                    className="flex flex-col justify-center text-white font-[freepara]"
                     initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
                     transition={{ delay: 0.2, ease: "easeIn", duration: 0.4 }}
                 >
-                    <p className="text-lg mb-4">
+                    <p className="text-base md:text-lg mb-4 leading-5">
                         Our team has deep specialization in creating brand
                         experience oriented hamper kits, fashion wear,
                         accessories and tech-based merchandise for your
@@ -83,7 +83,7 @@ const Merchandise = () => {
                 {experiences.map((item, index) => (
                     <motion.div
                         key={index}
-                        className="text-white border rounded lg:border-0 pb-2"
+                        className="font-[freepara] text-white border border-white/20 rounded lg:border-0 pb-2"
                         initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
                         transition={{
@@ -97,7 +97,7 @@ const Merchandise = () => {
                             alt={item.title}
                             className="w-full h-auto object-cover rounded-md"
                         />
-                        <h3 className="text-lg font-bold mt-4 pl-2 freeheading">
+                        <h3 className="text-lg font-bold mt-4 pl-2 ">
                             {item.title}
                         </h3>
                         <p className="text-sm opacity-80 pl-2">

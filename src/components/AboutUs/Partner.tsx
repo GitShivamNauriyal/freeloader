@@ -8,18 +8,15 @@ const imageList = Array.from(
 
 const PartnerAllianceSection = () => {
     return (
-        <section
-            className="bg-[#661eff] text-white py-20 px-6 md:px-16 wavy-background"
-            style={{ fontFamily: "AgrandirWide, sans-serif" }}
-        >
-            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <section className="bg-[#661eff] text-white py-20 px-6 md:px-16 wavy-background">
+            <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center font-[AgrandirWide]">
                 {/* Left: Text */}
                 <motion.div
                     initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
                     transition={{ duration: 0.2, ease: "easeOut", delay: 0.2 }}
                 >
-                    <h2 className="text-5xl lg:text-7xl freeheading md:text-6xl font-bold leading-10 lg:leading-16">
+                    <h2 className="font-[AgrandirWide] text-5xl lg:text-7xl freeheading md:text-6xl font-bold leading-10 lg:leading-16">
                         First <br />
                         Preference <br />
                         Alliance
@@ -28,7 +25,7 @@ const PartnerAllianceSection = () => {
                         OUR PARTNER NETWORK
                     </div>
 
-                    <p className="mt-8 text-lg leading-relaxed text-white/90">
+                    <p className="mt-8 text-lg text-white/90 font-[freepara]">
                         With our Pan-India partner network, we have formed a{" "}
                         <span className="font-semibold">
                             1<sup>st</sup> Preference Alliance
@@ -36,7 +33,7 @@ const PartnerAllianceSection = () => {
                         with our long-term regular manufacturers, export houses,
                         producers, fabricators & suppliers.
                     </p>
-                    <p className="mt-6 text-lg leading-relaxed text-white/90">
+                    <p className="mt-6 text-lg text-white/90 font-[freepara]">
                         We maintain complete control over{" "}
                         <span className="font-bold">
                             QUALITY, DESIGN, GUIDELINES & FINAL PRODUCT

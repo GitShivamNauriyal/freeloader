@@ -11,7 +11,7 @@ export default function MerchSubsection() {
                     initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
-                    className="text-3xl md:text-4xl font-bold text-[#5e17eb] mb-4"
+                    className="text-3xl md:text-4xl font-bold text-[#5e17eb] mb-4 font-[AgrandirWide]"
                 >
                     Explore Our Merch & Gift Shop
                 </motion.h2>
@@ -19,7 +19,7 @@ export default function MerchSubsection() {
                     initial={{ opacity: 0, y: 100, filter: "blur(100px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
-                    className="text-[#5e17ebbb] max-w-2xl mx-auto mb-8"
+                    className="text-[#5e17ebdd] max-w-2xl mx-auto mb-8"
                 >
                     Discover a curated collection of high-quality merch,
                     hand-picked accessories, and thoughtful gifts — all designed
@@ -36,7 +36,7 @@ export default function MerchSubsection() {
                         to="https://future-culture-next-js-frontend.vercel.app/"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="inline-block px-6 py-3 text-sm font-semibold rounded-md bg-violet-600 hover:bg-violet-700 hover:-translate-y-1 text-white transition"
+                        className="inline-block px-6 py-3 text-sm font-semibold rounded-md bg-[#5e17eb] hover:bg-[#5e17ebd1] hover:-translate-y-1 text-white transition"
                     >
                         Tangibles →
                     </Link>

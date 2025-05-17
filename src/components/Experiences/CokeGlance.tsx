@@ -46,7 +46,7 @@ const CokeGlance = () => {
                                 <img
                                     src="/assets/images/PhoneFrame.png"
                                     alt={`Work Glance`}
-                                    className="object-contain rounded-xl z-10 pointer-events-none"
+                                    className="absolute inset-0 object-contain rounded-xl z-10 pointer-events-none"
                                 />
                             </div>
                         </motion.div>
@@ -79,7 +79,7 @@ const CokeGlance = () => {
                             <img
                                 src="/assets/images/PhoneFrame.png"
                                 alt={`Work Glance`}
-                                className="object-contain rounded-xl z-10 pointer-events-none"
+                                className="absolute inset-0 object-contain rounded-xl z-10 pointer-events-none"
                             />
                         </div>
                     </motion.div>

@@ -43,7 +43,7 @@ const BrandExperiences = () => {
                     transition={{ delay: 0, ease: "easeIn", duration: 0.4 }}
                     className="flex items-start md:items-center justify-start z-10"
                 >
-                    <h2 className="text-5xl sm:text-7xl font-bold leading-12 lg:leading-16">
+                    <h2 className="text-4xl sm:text-7xl font-bold leading-8 lg:leading-16 font-[AgrandirWide]">
                         <span className="block text-3xl italic font-medium">
                             Brand
                         </span>
@@ -55,9 +55,9 @@ const BrandExperiences = () => {
                     initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
                     transition={{ delay: 0.2, ease: "easeIn", duration: 0.4 }}
-                    className="flex flex-col justify-center text-white freeheading"
+                    className="flex flex-col justify- leading-5 md:leading-normal text-white font-[freepara]"
                 >
-                    <p className="text-base mb-4">
+                    <p className="text-base mb-4 leading-4">
                         From conceptual brand launches, to theme based on–ground
                         campaigns, to most happening night of the town…
                         on–ground experiences come in many flavors and a lot of
@@ -71,7 +71,7 @@ const BrandExperiences = () => {
             </div>
 
             {/* Bottom Section: Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 px-4 md:px-16 mt-12 max-w-screen-xl mx-auto">
+            <div className="font-[freepara] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 px-4 md:px-16 mt-12 max-w-screen-xl mx-auto">
                 {experiences.map((item, index) => (
                     <motion.div
                         key={index}

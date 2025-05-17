@@ -10,18 +10,15 @@ import { Link } from "react-router-dom";
 export default function Footer() {
     return (
         <footer className="bg-black text-white px-6 md:px-12 lg:px-24 py-16">
-            <div
-                className="grid gap-10 md:grid-cols-3"
-                // style={{ fontFamily: "AgrandirWide, sans-serif" }}
-            >
+            <div className="grid gap-10 md:grid-cols-3">
                 {/* Left - Brand */}
                 <div>
-                    <h3 className="text-xl leading-5 font-bold tracking-widest mb-2">
+                    <h3 className="text-xl leading-5 font-bold tracking-widest mb-2 font-[AgrandirHeavy]">
                         FREE <br />
                         LOADER <br />
                         AGENCY
                     </h3>
-                    <p className="text-gray-400 text-sm freeheading">
+                    <p className="text-gray-300 text-sm font-[freeheading]">
                         Freeloader Agency is an inclusive workplace. We welcome
                         people of all colors, genders, and beliefs.
                     </p>
@@ -29,10 +26,10 @@ export default function Footer() {
 
                 {/* Navigation */}
                 <nav aria-label="Main Navigation">
-                    <h4 className="font-semibold text-lg mb-3 text-white">
+                    <h4 className="font-semibold text-lg mb-3 text-white font-[AgrandirWide]">
                         Navigation
                     </h4>
-                    <ul className="space-y-2 text-gray-300">
+                    <ul className="space-y-2 text-gray-300 font-[freeheading]">
                         <li>
                             <Link
                                 to="/experiences"
@@ -69,8 +66,8 @@ export default function Footer() {
                 </nav>
 
                 {/* Get in Touch */}
-                <div>
-                    <h4 className="font-semibold text-lg mb-3 text-white">
+                <div className="font-[freeheading]">
+                    <h4 className="font-semibold text-lg mb-3 text-white font-[AgrandirWide]">
                         Get in Touch
                     </h4>
                     <a

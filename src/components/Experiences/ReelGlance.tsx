@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const ReelGlance = () => {
     return (
-        <div className="border-t-2 border-white wavy-background pt-8 lg:py-16 relative">
+        <div className="border-t-2 border-white wavy-background pt-8 lg:py-16 relative font-[AgrandirWide]">
             <div className="flex md:flex-row flex-col items-center justify-center h-full px-4 md:px-16 lg:px-32 xl:px-64">
                 <div className="w-full mt-6 flex justify-center lg:justify-start mb-6">
                     <span className="text-white text-3xl sm:text-5xl lg:text-6xl font-bold freeheading">
@@ -38,7 +38,7 @@ const ReelGlance = () => {
                             <img
                                 src="/assets/images/PhoneFrame.png"
                                 alt={`Work Glance`}
-                                className="object-contain rounded-xl z-10 pointer-events-none"
+                                className="absolute inset-0 object-contain rounded-xl z-10 pointer-events-none"
                             />
                         </div>
                     </motion.div>

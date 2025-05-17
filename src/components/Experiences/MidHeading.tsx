@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const MidHeading = () => {
     return (
-        <div className="px-6 py-12 md:p-16 lg:pt-24 pb-12 bg-white">
+        <div className="px-6 py-12 md:p-16 lg:pt-24 pb-12 bg-white wavy-light-background font-[AgrandirWide]">
             <motion.h1
                 initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                 whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}

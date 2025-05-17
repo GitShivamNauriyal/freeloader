@@ -18,11 +18,11 @@ const MidHeading = () => {
                     filter: "blur(0)",
                 }}
                 transition={{ ease: "easeInOut", duration: 0.3 }}
-                className="px-4 md:px-20 lg:px-44 max-w-screen-xl mx-auto text-lg sm:text-xl lg:text-5xl text-center text-[#5e17eb] font-bold leading-5 md:leading-8 lg:leading-10 tracking-wide uppercase"
+                className="font-[AgrandirHeavy] px-4 md:px-20 lg:px-28 max-w-screen-xl mx-auto text-lg sm:text-xl lg:text-3xl text-center md:text-left text-[#5e17eb] font-bold leading-5 md:leading-8 tracking-wide uppercase"
             >
                 Physical merchandise provides a tangible way for YOUR AUDIENCE
                 to interact with a brand, often leading to a more memorable and
-                impactful brand experience than digital or print ads.
+                impactful brand experience than digital or print adS.
             </motion.h1>
 
             {/* Arrow and "Showreel" text */}
@@ -40,7 +40,7 @@ const MidHeading = () => {
                 transition={{ ease: "easeInOut", duration: 0.3, delay: 0.2 }}
                 className="mt-4 lg:mt-6 flex flex-col items-center"
             >
-                <span className="text-[#5e17eb] font-medium">
+                <span className="text-[#5e17eb] font-medium italic">
                     Check-out our Hamper Innovations
                 </span>
                 <FaArrowDown className="text-[#5e17eb] text-xl mb-1" />

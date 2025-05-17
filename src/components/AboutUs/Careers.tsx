@@ -11,7 +11,7 @@ const Careers = () => {
                     initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
-                    className="freeheading text-4xl sm:text-5xl md:text-6xl lg:text-[60px] xl:text-[72px] font-extrabold leading-8 md:leading-12 lg:leading-16 tracking-normal uppercase"
+                    className="font-[AgrandirWide] text-4xl sm:text-5xl md:text-6xl lg:text-[60px] xl:text-[72px] font-extrabold leading-8 md:leading-12 lg:leading-16 tracking-normal uppercase"
                 >
                     Careers at <br className="hidden sm:block" />
                     Freeloader Inc.
@@ -39,13 +39,13 @@ const Careers = () => {
                         className="flex-1 w-full"
                     >
                         <div className="mt-6 sm:mt-10">
-                            <h3 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold leading-5 lg:leading-8 uppercase">
+                            <h3 className="font-[AgrandirHeavy] text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold leading-5 lg:leading-8 uppercase">
                                 Join Our <br />
                                 Creative Collective <br />
                                 of Thinkers, Makers <br />
                                 and Doers
                             </h3>
-                            <div className="cursor-pointer inline-block bg-black text-white text-xs sm:text-sm font-bold px-3 py-1 mt-2">
+                            <div className="font-[AgrandirWide] cursor-pointer inline-block bg-black text-white text-xs sm:text-sm font-bold px-3 py-1 mt-2">
                                 WE&apos;RE HIRING
                             </div>
                         </div>
@@ -68,7 +68,7 @@ const Careers = () => {
                             ease: "easeOut",
                             delay: 0.2,
                         }}
-                        className="flex-1 w-full max-w-xl leading-tight text-sm sm:text-base text-gray-100 space-y-4 lg:space-y-6"
+                        className="font-[freepara] flex-1 w-full max-w-xl leading-tight text-sm sm:text-base text-gray-100 space-y-4 lg:space-y-6"
                     >
                         <p>
                             At Freeloader, we don&apos;t just build experiences

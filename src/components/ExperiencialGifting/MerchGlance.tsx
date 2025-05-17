@@ -34,7 +34,7 @@ const MerchGlance = () => {
                             <img
                                 src="/assets/images/PhoneFrame.png"
                                 alt={`Merch Glance ${num}`}
-                                className="object-contain rounded-xl z-10 pointer-events-none"
+                                className="absolute inset-0 object-contain rounded-xl z-10 pointer-events-none"
                             />
                         </div>
                     </motion.div>

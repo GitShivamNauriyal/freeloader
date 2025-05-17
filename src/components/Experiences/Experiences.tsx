@@ -13,9 +13,7 @@ const imageList = Array.from(
 
 const page = () => {
     return (
-        <div
-        //  style={{ fontFamily: "AgrandirWide, sans-serif" }}
-        >
+        <div>
             <BrandExperiences />
             <MidHeading />
             <ReelGlance />

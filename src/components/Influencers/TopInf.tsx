@@ -40,7 +40,7 @@ const TopInfluencers = () => {
                     transition={{ duration: 0.5 }}
                     className="flex items-start md:items-center justify-start z-10"
                 >
-                    <h2 className="text-5xl sm:text-7xl font-bold leading-12 lg:leading-16">
+                    <h2 className="text-5xl sm:text-7xl font-bold leading-12 lg:leading-16 font-[AgrandirWide]">
                         <span className="block text-5xl italic font-medium">
                             Top
                         </span>
@@ -53,7 +53,7 @@ const TopInfluencers = () => {
                     initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.6, delay: 0.1 }}
-                    className="flex flex-col justify-center text-white freeheading"
+                    className="flex flex-col justify-center text-white font-[freepara]"
                 >
                     <p className="text-base mb-4">
                         We work closely with influencers from various fields,
@@ -76,7 +76,7 @@ const TopInfluencers = () => {
                         initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, delay: index * 0.2 }}
-                        className="text-white border rounded lg:border-0 pb-2"
+                        className="text-white border rounded lg:border-0 pb-2 font-[freepara]"
                     >
                         <div className="relative w-full aspect-[3/2] rounded-md overflow-hidden">
                             <img
