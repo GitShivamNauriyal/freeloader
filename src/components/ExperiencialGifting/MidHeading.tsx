@@ -1,6 +1,6 @@
 "use client";
 
-import { FaArrowDown } from "react-icons/fa";
+// import { FaArrowDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const MidHeading = () => {
@@ -25,7 +25,6 @@ const MidHeading = () => {
                 impactful brand experience than digital or print adS.
             </motion.h1>
 
-            {/* Arrow and "Showreel" text */}
             <motion.div
                 initial={{
                     opacity: 0,
@@ -38,12 +37,33 @@ const MidHeading = () => {
                     filter: "blur(0)",
                 }}
                 transition={{ ease: "easeInOut", duration: 0.3, delay: 0.2 }}
-                className="mt-4 lg:mt-6 flex flex-col items-center"
+                className="flex flex-col items-center"
             >
-                <span className="text-[#5e17eb] font-medium italic">
-                    Check-out our Hamper Innovations
-                </span>
-                <FaArrowDown className="text-[#5e17eb] text-xl mb-1" />
+                <div className="flex flex-col items-center">
+                    <div className="flex gap-6 items-center mt-4">
+                        <span className="text-[#5e17eb] font-medium mb-2 font-[freepara] italic">
+                            Check-out our Hamper Innovations
+                        </span>
+                        <div className="bg-cyan-300 rounded-full w-16 h-16 flex items-center justify-center shadow-md">
+                            <svg
+                                width="40"
+                                height="40"
+                                viewBox="0 0 40 40"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <polyline
+                                    points="10,16 20,26 30,16"
+                                    fill="none"
+                                    stroke="white"
+                                    strokeWidth="4"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
             </motion.div>
         </div>
     );

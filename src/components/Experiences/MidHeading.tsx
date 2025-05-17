@@ -1,6 +1,6 @@
 "use client";
 import { Link } from "react-router-dom";
-import { FaArrowDown } from "react-icons/fa";
+// import { FaArrowDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const MidHeading = () => {
@@ -20,8 +20,29 @@ const MidHeading = () => {
             {/* Arrow and "Showreel" text */}
             <Link to="#exp-reel">
                 <div className="mt-4 lg:mt-6 flex flex-col items-center">
-                    <span className="text-[#5e17eb] font-medium">Showreel</span>
-                    <FaArrowDown className="text-cyan-500 mb-1" />
+                    <div className="flex gap-6 items-center mt-4 lg:mt-6">
+                        <span className="text-[#5e17eb] font-medium mb-2">
+                            Showreel
+                        </span>
+                        <div className="bg-cyan-300 rounded-full w-16 h-16 flex items-center justify-center shadow-md">
+                            <svg
+                                width="40"
+                                height="40"
+                                viewBox="0 0 40 40"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                            >
+                                <polyline
+                                    points="10,16 20,26 30,16"
+                                    fill="none"
+                                    stroke="white"
+                                    strokeWidth="4"
+                                    strokeLinecap="round"
+                                    strokeLinejoin="round"
+                                />
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </Link>
         </div>

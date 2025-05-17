@@ -8,6 +8,7 @@ import ExperiencialGifting from "./components/ExperiencialGifting/ExperiencialGi
 import Influencers from "./components/Influencers/Influencers";
 import Footer from "./components/common/Footer";
 import Blogs from "./Blogs/Blogs";
+import ScrollToTop from "./components/common/ScrollToTop";
 
 const App = () => {
     return (
@@ -15,6 +16,7 @@ const App = () => {
             <div className="relative">
                 <Navbar />
                 <main className="pt-16 w-full">
+                    <ScrollToTop />
                     <Routes>
                         <Route path="/" element={<Overview />} />
                         <Route path="/experiences" element={<Experiences />} />
