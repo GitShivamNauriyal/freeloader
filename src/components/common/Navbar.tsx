@@ -46,7 +46,7 @@ const Navbar = () => {
                                     to={path}
                                     className={`transition-colors duration-300 hover:text-gray-200 ${
                                         location.pathname === path
-                                            ? "text-purple-300"
+                                            ? "text-purple-200"
                                             : ""
                                     }`}
                                 >

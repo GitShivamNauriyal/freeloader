@@ -5,6 +5,7 @@ import TeamVideoPlayback from "./VideoPlayback";
 import PartnerAllianceSection from "./Partner";
 import Creation from "./Creation";
 import Careers from "./Careers";
+import GetInTouch from "./GetInTouch";
 
 const page = () => {
     return (
@@ -14,6 +15,7 @@ const page = () => {
             <CoreTeam />
             <PartnerAllianceSection />
             <Careers />
+            <GetInTouch />
         </div>
     );
 };
