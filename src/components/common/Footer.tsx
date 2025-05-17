@@ -62,6 +62,14 @@ export default function Footer() {
                                 About Us
                             </Link>
                         </li>
+                        <li>
+                            <Link
+                                to="/blogs"
+                                title="Learn more about our team and mission"
+                            >
+                                Blogs
+                            </Link>
+                        </li>
                     </ul>
                 </nav>
 

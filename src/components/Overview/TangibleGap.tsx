@@ -1,17 +1,16 @@
 "use client";
-
 import { motion } from "framer-motion";
 
 const TangibleGap = () => {
     return (
-        <div className="bg-white w-full py-16 px-4 overflow-hidden">
-            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
+        <div className="bg-white w-full pt-24 pb-0 md:py-24 px-4 overflow-hidden">
+            <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8 relative">
                 {/* Text Content */}
                 <motion.div
                     initial={{ opacity: 0, x: -30, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
-                    className="max-w-2xl relative font-[freepara]"
+                    className="max-w-2xl relative font-[freepara] z-10"
                 >
                     {/* Background Prop Image */}
                     <img
@@ -82,8 +81,37 @@ const TangibleGap = () => {
                     </motion.p>
                 </motion.div>
 
+                {/* Video + Frame */}
                 <motion.div
-                    className="flex flex-col items-center overflow-visible"
+                    className="hidden md:block absolute right-0 top-[-2rem] z-20"
+                    // You can tweak bottom-[-4rem] for how much it "comes out"
+                    initial={{ opacity: 0, y: 40, filter: "blur(10px)" }}
+                    whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
+                    transition={{
+                        ease: "easeIn",
+                        duration: 0.6,
+                    }}
+                >
+                    <div className="relative w-64 md:w-80 aspect-[1/2]">
+                        <video
+                            src={`/assets/video/tangible_gap.mp4`}
+                            className="absolute inset-0 w-[93%] left-2 h-full object-cover rounded-4xl z-0"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                        />
+                        <img
+                            src="/assets/images/PhoneFrame.png"
+                            alt="Work Glance"
+                            className="absolute inset-0 w-full h-full object-contain rounded-xl z-10 pointer-events-none"
+                        />
+                    </div>
+                </motion.div>
+
+                {/* Mobile: Stack video below text */}
+                <motion.div
+                    className="block md:hidden w-full overflow-hidden"
                     initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
                     transition={{
@@ -91,33 +119,21 @@ const TangibleGap = () => {
                         duration: 0.6,
                     }}
                 >
-                    <motion.div
-                        className="flex flex-col translate-y-32"
-                        initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
-                        whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
-                        transition={{
-                            ease: "easeIn",
-                            duration: 0.6,
-                        }}
-                    >
-                        <div className="relative w-64 md:w-80 aspect-[1/2]">
-                            {/* Video goes first, behind */}
-                            <video
-                                src={`/assets/video/tangible_gap.mp4`}
-                                className="absolute inset-0 w-[93%] left-2 h-full object-cover rounded-4xl z-0"
-                                autoPlay
-                                loop
-                                muted
-                                playsInline
-                            />
-                            {/* Phone frame image overlays the video */}
-                            <img
-                                src="/assets/images/PhoneFrame.png"
-                                alt="Work Glance"
-                                className="absolute inset-0 w-full h-full object-contain rounded-xl z-10 pointer-events-none"
-                            />
-                        </div>
-                    </motion.div>
+                    <div className="relative mx-auto w-64 aspect-[1/2] -mb-16">
+                        <video
+                            src={`/assets/video/tangible_gap.mp4`}
+                            className="absolute inset-0 w-[93%] left-2 h-full object-cover rounded-4xl z-0"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                        />
+                        <img
+                            src="/assets/images/PhoneFrame.png"
+                            alt="Work Glance"
+                            className="absolute inset-0 w-full h-full object-contain rounded-xl z-10 pointer-events-none"
+                        />
+                    </div>
                 </motion.div>
             </div>
         </div>

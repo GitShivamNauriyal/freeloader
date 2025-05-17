@@ -1,17 +1,16 @@
 "use client";
-
 import { motion } from "framer-motion";
 
 const ExperienceMarketingSection = () => {
     return (
-        <div className="w-full bg-white py-20 px-4">
-            <div className="max-w-6xl mx-auto flex flex-col gap-8 lg:flex-row items-center justify-between relative">
+        <div className="w-full bg-white pt-20 md:py-20 p-4 pr-0 md:px-4 overflow-hidden">
+            <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 md:gap-8 relative">
                 {/* Left Content */}
                 <motion.div
                     initial={{ opacity: 0, x: -30, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
-                    className="max-w-2xl md:w-2/3 relative font-[freepara]"
+                    className="max-w-2xl md:w-2/3 relative font-[freepara] z-10 mr-4 md:mr-0"
                 >
                     {/* Background Prop Image */}
                     <img
@@ -74,16 +73,19 @@ const ExperienceMarketingSection = () => {
                     </motion.p>
                 </motion.div>
 
+                {/* Desktop: Video absolutely positioned to the right */}
                 <motion.div
-                    className="flex flex-col items-center justify-center md:mt-0"
-                    initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
-                    whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
+                    className="hidden lg:block absolute right-[-7rem] top-1/2 -translate-y-1/2 z-20"
+                    initial={{ opacity: 0, x: 80, filter: "blur(10px)" }}
+                    whileInView={{ opacity: 1, x: 0, filter: "blur(0)" }}
                     transition={{
                         ease: "easeIn",
                         duration: 0.6,
                     }}
                 >
-                    <div className="relative w-80 sm:w-96 md:w-xl aspect-[2/1] mx-auto">
+                    <div className="relative w-[42rem] aspect-[2/1] translate-x-48">
+                        {" "}
+                        {/* Increased width */}
                         {/* Video Layer */}
                         <div className="absolute inset-0 h-[94%] top-2 z-0">
                             <video
@@ -95,7 +97,6 @@ const ExperienceMarketingSection = () => {
                                 playsInline
                             />
                         </div>
-
                         {/* Rotated Phone Frame */}
                         <div className="absolute inset-0 z-10 pointer-events-none">
                             <img
@@ -105,6 +106,44 @@ const ExperienceMarketingSection = () => {
                             />
                         </div>
                     </div>
+                </motion.div>
+
+                {/* Mobile: Video in next row, comes in from right, overflows */}
+                <motion.div
+                    className="block lg:hidden w-full relative overflow-hidden mt-8"
+                    initial={{ opacity: 0, x: 80, filter: "blur(10px)" }}
+                    whileInView={{ opacity: 1, x: 0, filter: "blur(0)" }}
+                    transition={{
+                        ease: "easeIn",
+                        duration: 0.6,
+                    }}
+                >
+                    <div className="absolute right-[-2rem] top-0 w-[22rem] aspect-[2/1] z-20">
+                        {" "}
+                        {/* Increased width */}
+                        {/* Video Layer */}
+                        <div className="absolute inset-0 h-[94%] top-2 z-0">
+                            <video
+                                src={`/assets/video/exp_marketing.mp4`}
+                                className="w-full h-full object-cover rounded-4xl"
+                                autoPlay
+                                loop
+                                muted
+                                playsInline
+                            />
+                        </div>
+                        {/* Rotated Phone Frame */}
+                        <div className="absolute inset-0 z-10 pointer-events-none">
+                            <img
+                                src="/assets/images/PhoneFrameRotated.png"
+                                alt="Work Glance"
+                                className="object-contain rounded-xl"
+                            />
+                        </div>
+                    </div>
+                    {/* Spacer to reserve height for the video so it doesn't overlap next section */}
+                    <div className="h-56"></div>{" "}
+                    {/* Increased height for larger video */}
                 </motion.div>
             </div>
         </div>
