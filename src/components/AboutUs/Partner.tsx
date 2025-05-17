@@ -16,7 +16,7 @@ const PartnerAllianceSection = () => {
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
                     transition={{ duration: 0.2, ease: "easeOut", delay: 0.2 }}
                 >
-                    <h2 className="font-[AgrandirWide] text-5xl lg:text-7xl freeheading md:text-6xl font-bold leading-10 lg:leading-16">
+                    <h2 className="font-[AgrandirWide] text-4xl lg:text-7xl freeheading md:text-6xl font-bold leading-10 lg:leading-16">
                         First <br />
                         Preference <br />
                         Alliance
@@ -25,7 +25,7 @@ const PartnerAllianceSection = () => {
                         OUR PARTNER NETWORK
                     </div>
 
-                    <p className="mt-8 text-lg text-white/90 font-[freepara]">
+                    <p className="mt-8 text-md md:text-lg text-white/90 font-[freepara]">
                         With our Pan-India partner network, we have formed a{" "}
                         <span className="font-semibold">
                             1<sup>st</sup> Preference Alliance

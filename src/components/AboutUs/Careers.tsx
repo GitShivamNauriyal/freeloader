@@ -39,7 +39,7 @@ const Careers = () => {
                         className="flex-1 w-full"
                     >
                         <div className="mt-6 sm:mt-10">
-                            <h3 className="font-[AgrandirHeavy] text-lg sm:text-xl md:text-2xl lg:text-3xl font-extrabold leading-5 lg:leading-8 uppercase">
+                            <h3 className="font-[AgrandirHeavy] text-md sm:text-xl md:text-2xl lg:text-3xl font-extrabold leading-5 lg:leading-8 uppercase">
                                 Join Our <br />
                                 Creative Collective <br />
                                 of Thinkers, Makers <br />

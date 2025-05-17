@@ -12,10 +12,10 @@ const Overview = () => {
         <div>
             <HeroSection />
             <History />
-            <OverviewVideoPlayback />
             <TangibleGap />
             <ClientsSection />
             <ExperienceMarketingSection />
+            <OverviewVideoPlayback />
             <Process />
             <OverviewVideoPlayback_2 />
         </div>

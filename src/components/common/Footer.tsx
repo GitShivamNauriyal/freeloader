@@ -119,7 +119,7 @@ export default function Footer() {
 
             <div className="mt-16 border-t border-neutral-800 pt-6 flex flex-col md:flex-row justify-between text-sm text-gray-400">
                 <p>Copyright © 2025 Freeloader Inc. All rights reserved.</p>
-                <div className="flex gap-6 mt-3 md:mt-0">
+                <div className="flex gap-4 md:gap-6 mt-3 md:mt-0">
                     <a href="#" className="hover:text-white">
                         Privacy Policy
                     </a>

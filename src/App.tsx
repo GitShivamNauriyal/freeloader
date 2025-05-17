@@ -7,6 +7,7 @@ import Experiences from "./components/Experiences/Experiences";
 import ExperiencialGifting from "./components/ExperiencialGifting/ExperiencialGifting";
 import Influencers from "./components/Influencers/Influencers";
 import Footer from "./components/common/Footer";
+import Blogs from "./Blogs/Blogs";
 
 const App = () => {
     return (
@@ -23,6 +24,7 @@ const App = () => {
                         />
                         <Route path="/influencers" element={<Influencers />} />
                         <Route path="/about-us" element={<AboutUs />} />
+                        <Route path="/blogs" element={<Blogs />} />
                     </Routes>
                 </main>
                 <Footer />

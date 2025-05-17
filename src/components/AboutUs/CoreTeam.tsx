@@ -26,7 +26,7 @@ const experiences = [
 
 const CoreTeam = () => {
     return (
-        <section className="w-full py-4">
+        <section className="w-full pt-4 pb-8">
             {/* Top Section: Heading */}
             <motion.div
                 initial={{ opacity: 0, x: 20, filter: "blur(10px)" }}
@@ -40,8 +40,8 @@ const CoreTeam = () => {
                         alt="Tangible Background Prop"
                         className="absolute -top-8 -left-16 w-32 h-32 object-contain z-0 opacity-100"
                     />
-                    <h2 className="font-[AgrandirWide] text-5xl sm:text-6xl font-bold leading-10 md:leading-12 z-10">
-                        <span className="block text-4xl italic font-medium">
+                    <h2 className="font-[AgrandirWide] text-4xl sm:text-6xl font-bold leading-10 md:leading-12 z-10">
+                        <span className="block text-3xl md:text-4xl italic font-medium">
                             Meet Our
                         </span>
                         CORE TEAM

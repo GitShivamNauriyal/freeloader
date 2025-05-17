@@ -8,6 +8,7 @@ const menuItems = [
     { label: "experiencial gifting", path: "/experiencial-gifting" },
     { label: "influencers", path: "/influencers" },
     { label: "about us", path: "/about-us" },
+    { label: "blogs", path: "/blogs" },
 ];
 
 const Navbar = () => {
@@ -88,7 +89,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3 }}
-                        className="md:hidden bg-[#5e17eb]/90 backdrop-blur-md absolute top-16 left-0 w-full px-4 py-4 space-y-2 z-[998]"
+                        className=" font-[freeheading] md:hidden bg-[#5e17eb]/90 backdrop-blur-md absolute top-16 left-0 w-full px-4 py-4 space-y-2 z-[998]"
                     >
                         {menuItems.map(({ label, path }, i) => (
                             <motion.div
