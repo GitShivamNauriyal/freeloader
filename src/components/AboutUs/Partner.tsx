@@ -65,8 +65,6 @@ const PartnerAllianceSection = () => {
                         >
                             <img
                                 src={image}
-                                width={300}
-                                height={300}
                                 alt={`Partner logo ${idx + 1}`}
                                 className="w-32 sm:w-44 h-auto"
                             />

@@ -16,7 +16,7 @@ const ExperienceMarketingSection = () => {
                     <img
                         src="/assets/images/TangibleBgProp.png"
                         alt="Tangible Background Prop"
-                        className="absolute -top-8 -left-16 w-32 h-32 object-contain z-0 opacity-80"
+                        className="absolute -top-16 -left-32 w-52 h-52 object-contain z-0 opacity-100"
                     />
 
                     {/* Heading Block */}
@@ -119,8 +119,6 @@ const ExperienceMarketingSection = () => {
                     }}
                 >
                     <div className="absolute right-[-2rem] top-0 w-[22rem] aspect-[2/1] z-20">
-                        {" "}
-                        {/* Increased width */}
                         {/* Video Layer */}
                         <div className="absolute inset-0 h-[94%] top-2 z-0">
                             <video

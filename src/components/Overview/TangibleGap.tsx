@@ -16,7 +16,7 @@ const TangibleGap = () => {
                     <img
                         src="/assets/images/TangibleBgProp.png"
                         alt="Tangible Background Prop"
-                        className="absolute -top-8 -left-16 w-32 h-32 object-contain z-0 opacity-80"
+                        className="absolute -top-16 -left-32 w-52 h-52 object-contain z-0 opacity-100"
                     />
 
                     {/* Heading Block */}

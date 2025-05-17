@@ -30,7 +30,7 @@ const TopInfluencers = () => {
                 <img
                     src="/assets/images/TangibleBgProp.png"
                     alt="Tangible Background Prop"
-                    className="absolute -top-8 left-4 w-32 h-32 object-contain z-0 opacity-100"
+                    className="absolute -top-16 -left-12 w-52 h-52 object-contain z-0 opacity-100"
                 />
 
                 {/* Left - Title */}

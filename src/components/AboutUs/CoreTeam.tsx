@@ -38,7 +38,7 @@ const CoreTeam = () => {
                     <img
                         src="/assets/images/TangibleBgProp.png"
                         alt="Tangible Background Prop"
-                        className="absolute -top-8 -left-16 w-32 h-32 object-contain z-0 opacity-100"
+                        className="absolute -top-16 -left-28 w-52 h-52 object-contain z-0 opacity-100"
                     />
                     <h2 className="font-[AgrandirWide] text-4xl sm:text-6xl font-bold leading-10 md:leading-12 z-10">
                         <span className="block text-3xl md:text-4xl italic font-medium">
