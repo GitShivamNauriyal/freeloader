@@ -16,7 +16,7 @@ const ExperienceMarketingSection = () => {
                     <img
                         src="/assets/images/TangibleBgProp.png"
                         alt="Tangible Background Prop"
-                        className="absolute -top-16 -left-32 w-52 h-52 object-contain z-0 opacity-100"
+                        className="absolute -top-10 md:-top-16 -left-16 md:-left-32 w-28 md:w-52 h-28 md:h-52 object-contain z-0 opacity-100"
                     />
 
                     {/* Heading Block */}
@@ -100,7 +100,7 @@ const ExperienceMarketingSection = () => {
                         {/* Rotated Phone Frame */}
                         <div className="absolute inset-0 z-10 pointer-events-none">
                             <img
-                                src="/assets/images/PhoneFrameRotated.png"
+                                src="/assets/images/PhoneFrameRotatedRight.png"
                                 alt="Work Glance"
                                 className="object-contain rounded-xl"
                             />
@@ -118,7 +118,7 @@ const ExperienceMarketingSection = () => {
                         duration: 0.6,
                     }}
                 >
-                    <div className="absolute right-[-2rem] top-0 w-[22rem] aspect-[2/1] z-20">
+                    <div className="absolute right-[-1rem] top-0 w-[22rem] aspect-[2/1] z-20">
                         {/* Video Layer */}
                         <div className="absolute inset-0 h-[94%] top-2 z-0">
                             <video

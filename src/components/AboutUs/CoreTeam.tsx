@@ -32,13 +32,13 @@ const CoreTeam = () => {
                 initial={{ opacity: 0, x: 20, filter: "blur(10px)" }}
                 whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                 transition={{ duration: 0.6, ease: "easeOut" }}
-                className="px-4 md:px-16 mt-16 max-w-screen-xl mx-auto"
+                className="px-4 md:px-16 mt-12 md:mt-16 max-w-screen-xl mx-auto"
             >
                 <div className="flex items-start md:items-center justify-start relative">
                     <img
                         src="/assets/images/TangibleBgProp.png"
                         alt="Tangible Background Prop"
-                        className="absolute -top-16 -left-28 w-52 h-52 object-contain z-0 opacity-100"
+                        className="absolute -top-12 md:-top-16 -left-20 md:-left-28 md:w-52 w-32 md:h-52 h-32 object-contain z-0 opacity-100"
                     />
                     <h2 className="font-[AgrandirWide] text-4xl sm:text-6xl font-bold leading-10 md:leading-12 z-10">
                         <span className="block text-3xl md:text-4xl italic font-medium">
@@ -50,7 +50,7 @@ const CoreTeam = () => {
             </motion.div>
 
             {/* Bottom Section: Team Grid */}
-            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-6 px-2 md:px-16 mt-12 max-w-screen-xl mx-auto">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-6 px-2 md:px-16 mt-6 md:mt-12 max-w-screen-xl mx-auto">
                 {experiences.map((item, index) => (
                     <motion.div
                         key={index}

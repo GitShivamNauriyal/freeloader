@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 const MidHeading = () => {
     return (
-        <div className="px-6 py-12 md:p-16 lg:pt-24 pb-12 bg-white wavy-light-background font-[AgrandirWide]">
+        <div className="px-6 py-12 md:p-16 lg:pt-24 pb-8 bg-white wavy-light-background font-[AgrandirWide]">
             <motion.h1
                 initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                 whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
                 transition={{ duration: 0.6 }}
-                className="px-4 md:px-20 lg:px-40 max-w-screen-xl mx-auto text-lg sm:text-xl lg:text-5xl text-center text-[#5e17eb] font-bold leading-5 md:leading-6 lg:leading-11 tracking-wide uppercase"
+                className="px-0 md:px-20 lg:px-40 max-w-screen-xl mx-auto text-lg sm:text-xl lg:text-5xl text-left md:text-center text-[#5e17eb] font-bold leading-5 md:leading-6 lg:leading-11 tracking-wide uppercase"
             >
                 95% of marketers agree that live events provide attendees with a
                 valuable opportunity to form in-person connections in an
@@ -19,9 +19,9 @@ const MidHeading = () => {
 
             {/* Arrow and "Showreel" text */}
             <Link to="#exp-reel">
-                <div className="mt-4 lg:mt-6 flex flex-col items-center">
+                <div className="mt-0 md:mt-6 flex flex-col items-center">
                     <div className="flex gap-6 items-center mt-4 lg:mt-6">
-                        <span className="text-[#5e17eb] font-medium mb-2">
+                        <span className="text-[#5e17eb] font-medium mb-">
                             Showreel
                         </span>
                         <div className="bg-cyan-300 rounded-full w-16 h-16 flex items-center justify-center shadow-md">

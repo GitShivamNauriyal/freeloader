@@ -9,9 +9,9 @@ import GetInTouch from "./GetInTouch";
 
 const page = () => {
     return (
-        <div>
+        <div className="w-screen overflow-hidden">
             <Creation />
-            <TeamVideoPlayback />ś
+            <TeamVideoPlayback />
             <CoreTeam />
             <PartnerAllianceSection />
             <Careers />

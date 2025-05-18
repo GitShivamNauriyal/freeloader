@@ -1,5 +1,3 @@
-"use client";
-
 import { motion } from "framer-motion";
 
 const History = () => {
@@ -10,7 +8,7 @@ const History = () => {
                     initial={{ filter: "blur(30px)" }}
                     whileInView={{ filter: "blur(0px)" }}
                     transition={{ duration: 0.4 }}
-                    className="font-[AgrandirHeavy] font-extrabold px-4 md:px-20 lg:px-24 max-w-screen-xl text-3xl sm:text-5xl  lg:text-7xl  text-left md:text-center freeheading text-white leading-7 sm:leading-12 md:leading-12 lg:leading-16 tracking-normal uppercase"
+                    className="font-[AgrandirHeavy] font-extrabold px-0 md:px-20 inline lg:px-24 max-w-screen-xl text-3xl sm:text-5xl  lg:text-7xl  text-left md:text-center freeheading text-white leading-7 sm:leading-12 md:leading-12 lg:leading-16 tracking-normal uppercase"
                 >
                     CREATING TANGIBLE
                     {/* <br /> */}
@@ -19,6 +17,11 @@ const History = () => {
                     <br />
                     SINCE 2009
                     {/* <br /> */}
+                    <img
+                        src="/assets/images/spring.png"
+                        alt="Tangible Background Prop"
+                        className="ml-1 md:ml-2 w-8 md:w-12 h-8 md:h-12 -translate-y-2 md:-translate-y-4 object-contain z-0 opacity-100 inline"
+                    />
                 </motion.h1>
             </div>
         </div>

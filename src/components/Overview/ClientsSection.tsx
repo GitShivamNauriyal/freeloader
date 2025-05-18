@@ -14,7 +14,7 @@ export default function ClientsSection() {
     return (
         <section className="border-t border-b w-screen py-20 md:py-24 wavy-background overflow-hidden">
             <div className="max-w-6xl mx-auto px-4 text-center">
-                <h2 className="text-4xl mb-6 md:mb-0 lg:text-6xl font-bold text-white font-[AgrandirWide]">
+                <h2 className="text-4xl mb-8 md:mb-0 lg:text-6xl font-bold text-white font-[AgrandirWide]">
                     OUR CLIENTS
                 </h2>
 

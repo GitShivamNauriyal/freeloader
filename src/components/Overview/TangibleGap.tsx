@@ -16,7 +16,7 @@ const TangibleGap = () => {
                     <img
                         src="/assets/images/TangibleBgProp.png"
                         alt="Tangible Background Prop"
-                        className="absolute -top-16 -left-32 w-52 h-52 object-contain z-0 opacity-100"
+                        className="absolute -top-10 md:-top-16 -left-16 md:-left-32 w-28 md:w-52 h-28  md:h-52 object-contain z-0 opacity-100"
                     />
 
                     {/* Heading Block */}
@@ -46,7 +46,7 @@ const TangibleGap = () => {
                         initial={{ opacity: 0, x: -20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="mt-4 text-neutral-700 text-sm md:text-lg leading-4 md:leading-tight"
+                        className="mt-2 md:mt-4 text-neutral-700 text-sm md:text-lg leading-4 md:leading-tight"
                     >
                         In an all digital era, brands are beginning to lose
                         tangible connection with their audience at an ever
@@ -57,7 +57,7 @@ const TangibleGap = () => {
                         initial={{ opacity: 0, x: -20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="mt-4 text-neutral-700 text-sm md:text-lg leading-4 md:leading-tight"
+                        className="mt-2 md:mt-4 text-neutral-700 text-sm md:text-lg leading-4 md:leading-tight"
                     >
                         Instead of reactive & ad-hoc solutions to reconnect with
                         the audience, the demand for well thought out
@@ -69,7 +69,7 @@ const TangibleGap = () => {
                         initial={{ opacity: 0, x: -20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="mt-4 text-neutral-700 font-[freepara] text-sm md:text-lg leading-4 md:leading-tight"
+                        className="mt-2 md:mt-4 text-neutral-700 font-[freepara] text-sm md:text-lg leading-4 md:leading-tight"
                     >
                         Since 2009, we at FIC have constantly evolved towards
                         innovating and building new age{" "}

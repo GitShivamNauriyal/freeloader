@@ -25,12 +25,12 @@ const TopInfluencers = () => {
     return (
         <section className="w-full pb-16">
             {/* Top Section: Heading and Text */}
-            <div className="grid grid-cols-1 mt-16 md:grid-cols-2 gap-6 lg:gap-0 px-4 md:px-16 max-w-screen-xl mx-auto relative">
+            <div className="grid grid-cols-1 mt-16 md:grid-cols-2 gap-2 lg:gap-0 px-4 md:px-16 max-w-screen-xl mx-auto relative">
                 {/* Background Prop Image */}
                 <img
                     src="/assets/images/TangibleBgProp.png"
                     alt="Tangible Background Prop"
-                    className="absolute -top-16 -left-12 w-52 h-52 object-contain z-0 opacity-100"
+                    className="absolute -top-10 md:-top-16 -left-16 md:-left-20 md:w-52 w-32 md:h-52 h-32 object-contain z-0 opacity-100"
                 />
 
                 {/* Left - Title */}
@@ -40,8 +40,8 @@ const TopInfluencers = () => {
                     transition={{ duration: 0.5 }}
                     className="flex items-start md:items-center justify-start z-10"
                 >
-                    <h2 className="text-5xl sm:text-7xl font-bold leading-12 lg:leading-16 font-[AgrandirWide]">
-                        <span className="block text-5xl italic font-medium">
+                    <h2 className="text-4xl sm:text-7xl font-bold leading-10 lg:leading-16 font-[AgrandirWide]">
+                        <span className="block text-4xl italic font-medium">
                             Top
                         </span>
                         INFLUENCERS
@@ -53,7 +53,7 @@ const TopInfluencers = () => {
                     initial={{ opacity: 0, y: 30, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.6, delay: 0.1 }}
-                    className="flex flex-col justify-center text-white font-[freepara]"
+                    className="flex flex-col justify-center text-white text-sm md:text-base font-[freepara]"
                 >
                     <p className="text-base mb-4">
                         We work closely with influencers from various fields,
@@ -76,7 +76,7 @@ const TopInfluencers = () => {
                         initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, delay: index * 0.2 }}
-                        className="text-white border rounded lg:border-0 pb-2 font-[freepara]"
+                        className="text-white border-white/20 border-[1px] rounded lg:border-0 pb-2 font-[freepara]"
                     >
                         <div className="relative w-full aspect-[3/2] rounded-md overflow-hidden">
                             <img

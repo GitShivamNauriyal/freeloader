@@ -16,7 +16,7 @@ const Navbar = () => {
     const location = useLocation();
 
     return (
-        <nav className="fixed w-full bg-black/30 backdrop-blur-md z-[999]">
+        <nav className="fixed w-screen bg-black/30 backdrop-blur-md z-[999]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
                     {/* Logo */}
@@ -39,7 +39,7 @@ const Navbar = () => {
                     </div>
 
                     {/* Desktop Menu */}
-                    <ul className="hidden md:flex items-center space-x-8 font-[freeheading] uppercase text-white text-sm">
+                    <ul className="hidden md:flex items-center space-x-8 font-medium uppercase text-white text-sm">
                         {menuItems.map(({ label, path }) => (
                             <li key={path} className="relative group">
                                 <Link
@@ -89,7 +89,7 @@ const Navbar = () => {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: -10 }}
                         transition={{ duration: 0.3 }}
-                        className=" font-[freeheading] md:hidden bg-[#5e17eb]/90 backdrop-blur-md absolute top-16 left-0 w-full px-4 py-4 space-y-2 z-[998]"
+                        className=" font-bold md:hidden bg-[#5e17eb]/90 backdrop-blur-md absolute top-16 left-0 w-full px-4 py-4 space-y-2 z-[998] uppercase"
                     >
                         {menuItems.map(({ label, path }, i) => (
                             <motion.div

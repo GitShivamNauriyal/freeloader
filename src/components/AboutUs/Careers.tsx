@@ -11,14 +11,14 @@ const Careers = () => {
                     initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
-                    className="font-[AgrandirWide] text-4xl sm:text-5xl md:text-6xl lg:text-[60px] xl:text-[72px] font-extrabold leading-8 md:leading-12 lg:leading-16 tracking-normal uppercase"
+                    className="font-[AgrandirWide] text-3xl sm:text-5xl md:text-6xl lg:text-[60px] xl:text-[72px] font-extrabold leading-8 md:leading-12 lg:leading-16 tracking-normal uppercase"
                 >
                     Careers at <br className="hidden sm:block" />
                     Freeloader Inc.
                 </motion.h2>
 
                 {/* Content Section */}
-                <div className="flex flex-col md:flex-row justify-between items-start gap-8 lg:gap-0 lg:py-10">
+                <div className="flex flex-col md:flex-row justify-between items-start gap-6 lg:gap-0 lg:py-10">
                     {/* Left Side */}
                     <motion.div
                         initial={{
@@ -39,7 +39,7 @@ const Careers = () => {
                         className="flex-1 w-full"
                     >
                         <div className="mt-6 sm:mt-10">
-                            <h3 className="font-[AgrandirHeavy] text-md sm:text-xl md:text-2xl lg:text-3xl font-extrabold leading-5 lg:leading-8 uppercase">
+                            <h3 className="font-[AgrandirHeavy] text-sm sm:text-xl md:text-2xl lg:text-3xl font-extrabold leading-4 lg:leading-8 uppercase">
                                 Join Our <br />
                                 Creative Collective <br />
                                 of Thinkers, Makers <br />

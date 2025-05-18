@@ -23,7 +23,7 @@ const OverviewVideoPlayback = () => {
                     initial={{ opacity: 0, y: 40, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
-                    className="max-w-4xl text-center text-[#5e17eb] font-[20] text-xl sm:text-2xl md:text-5xl tracking-wide leading-6 sm:leading-10"
+                    className="max-w-4xl text-center text-[#5e17eb] text-xl sm:text-2xl md:text-5xl tracking-wide leading-5 sm:leading-10"
                 >
                     <p>
                         “YOU CAN’T HOLD A HASHTAG.{" "}

@@ -33,7 +33,7 @@ const BrandExperiences = () => {
                 <img
                     src="/assets/images/TangibleBgProp.png"
                     alt="Tangible Background Prop"
-                    className="absolute -top-16 -left-12 w-52 h-52 object-contain z-0 opacity-100"
+                    className="absolute -top-10 md:-top-16 -left-16 md:-left-12 w-32 md:w-52 h-32 md:h-52 object-contain z-0 opacity-100"
                 />
                 <motion.div
                     initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}

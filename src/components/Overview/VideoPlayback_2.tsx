@@ -23,7 +23,7 @@ const OverviewVideoPlayback_2 = () => {
                     initial={{ opacity: 0, y: 40, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.4, ease: "easeOut" }}
-                    className="max-w-4xl text-center text-white font-[200] text-xl sm:text-2xl md:text-4xl tracking-wide leading-6 sm:leading-10"
+                    className="max-w-4xl text-center text-white font-[200] text-xl sm:text-2xl md:text-4xl tracking-wide leading-5 sm:leading-10"
                 >
                     <p>
                         PEOPLE DON’T CONNECT WITH PIXELS{" "}

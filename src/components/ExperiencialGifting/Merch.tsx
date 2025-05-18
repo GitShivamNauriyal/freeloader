@@ -47,10 +47,10 @@ const Merchandise = () => {
                     <img
                         src="/assets/images/TangibleBgProp.png"
                         alt="Tangible Background Prop"
-                        className="absolute -top-16 -left-28 w-52 h-52 object-contain z-0 opacity-100"
+                        className="absolute -top-14 -left-20 md:-left-32 w-32 md:w-52 h-32 md:h-52 object-contain z-0 opacity-100"
                     />
-                    <h2 className="font-[AgrandirWide] text-4xl md:text-6xl font-bold leading-10 md:leading-16 z-10">
-                        <span className="block text-2xl md:text-4xl italic leading-6 md:leading-normal font-medium mb-0.5 pr-4">
+                    <h2 className="font-[AgrandirWide] text-[1.7rem] md:text-6xl font-bold leading-10 md:leading-16 z-10">
+                        <span className="block text-lg md:text-4xl italic leading-4 md:leading-normal font-medium mb-0 md:mb-0.5 pr-4">
                             Customised & Personalised
                         </span>
                         EXPERIENCIAL GIFTING

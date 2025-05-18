@@ -19,12 +19,12 @@ const GetInTouch = () => {
 
     return (
         <div className="max-w-2xl mx-auto px-4 py-16 md:py-24">
-            <h2 className="text-3xl md:text-5xl font-[AgrandirWide] font-bold mb-8 text-center uppercase tracking-wide">
+            <h2 className="text-3xl md:text-5xl font-[AgrandirWide] font-bold mb-4 md:mb-8 text-center uppercase tracking-wide">
                 Get In Touch
             </h2>
             <form
                 onSubmit={handleSubmit}
-                className="space-y-6"
+                className="space-y-2 md:space-y-6"
                 autoComplete="off"
             >
                 {/* Name */}
