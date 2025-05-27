@@ -104,7 +104,7 @@ const TangibleGap = () => {
                         <img
                             src="/assets/images/iPhoneFrame.png"
                             alt="Work Glance"
-                            className="absolute inset-0 w-full h-full object-contain rounded-xl z-10 pointer-events-none"
+                            className="absolute inset-0 w-full h-full object-contain rounded-xl z-10 pointer-events-none scale-y-105"
                         />
                     </div>
                 </motion.div>
@@ -131,7 +131,7 @@ const TangibleGap = () => {
                         <img
                             src="/assets/images/iPhoneFrame.png"
                             alt="Work Glance"
-                            className="absolute inset-0 w-full h-full object-contain rounded-xl z-10 pointer-events-none"
+                            className="absolute inset-0 w-full h-full object-contain rounded-xl z-10 pointer-events-none scale-y-105"
                         />
                     </div>
                 </motion.div>

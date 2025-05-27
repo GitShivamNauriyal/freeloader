@@ -17,7 +17,7 @@ const CokeGlance = () => {
                     </span>
                     <div className="relative w-64 md:w-72 aspect-[1/2]">
                         <motion.div
-                            className="flex flex-col items-center overflow-visible"
+                            className="flex flex-col items-center overflow-visible pt-4"
                             initial={{
                                 opacity: 0,
                                 y: 20,
@@ -46,7 +46,7 @@ const CokeGlance = () => {
                                 <img
                                     src="/assets/images/iPhoneFrame.png"
                                     alt={`Work Glance`}
-                                    className="absolute inset-0 object-contain rounded-xl z-10 pointer-events-none"
+                                    className="absolute inset-0 object-contain rounded-xl z-10 pointer-events-none scale-y-105"
                                 />
                             </div>
                         </motion.div>
@@ -58,7 +58,7 @@ const CokeGlance = () => {
                         COKE MAGIC 2023
                     </span>
                     <motion.div
-                        className="flex flex-col items-center overflow-visible"
+                        className="flex flex-col items-center overflow-visible pt-4"
                         initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
                         transition={{
@@ -79,7 +79,7 @@ const CokeGlance = () => {
                             <img
                                 src="/assets/images/iPhoneFrame.png"
                                 alt={`Work Glance`}
-                                className="absolute inset-0 object-contain rounded-xl z-10 pointer-events-none"
+                                className="absolute inset-0 object-contain rounded-xl z-10 pointer-events-none scale-y-105"
                             />
                         </div>
                     </motion.div>

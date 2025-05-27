@@ -102,7 +102,7 @@ const ExperienceMarketingSection = () => {
                             <img
                                 src="/assets/images/iPhoneFrameRotatedRight.png"
                                 alt="Work Glance"
-                                className="object-contain rounded-xl"
+                                className="object-contain rounded-xl scale-x-[1.02]"
                             />
                         </div>
                     </div>
@@ -135,7 +135,7 @@ const ExperienceMarketingSection = () => {
                             <img
                                 src="/assets/images/iPhoneFrameRotated.png"
                                 alt="Work Glance"
-                                className="object-contain rounded-xl"
+                                className="object-contain rounded-xl scale-y-105"
                             />
                         </div>
                     </div>
