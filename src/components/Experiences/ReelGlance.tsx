@@ -27,7 +27,7 @@ const ReelGlance = () => {
                     >
                         <div className="relative w-64 md:w-72 aspect-[1/2]">
                             <video
-                                src={`/assets/video/experiences/Exp_Reel_Glance_C.mp4`}
+                                src={`/assets/video/experiences/Exp_Reel_Glance_comp.mp4`}
                                 className="absolute inset-0 left-2 w-[94%] h-full object-cover rounded-4xl z-0"
                                 controls
                                 autoPlay
