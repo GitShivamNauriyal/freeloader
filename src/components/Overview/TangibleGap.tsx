@@ -102,7 +102,7 @@ const TangibleGap = () => {
                             playsInline
                         />
                         <img
-                            src="/assets/images/PhoneFrame.png"
+                            src="/assets/images/iPhoneFrame.png"
                             alt="Work Glance"
                             className="absolute inset-0 w-full h-full object-contain rounded-xl z-10 pointer-events-none"
                         />
@@ -129,7 +129,7 @@ const TangibleGap = () => {
                             playsInline
                         />
                         <img
-                            src="/assets/images/PhoneFrame.png"
+                            src="/assets/images/iPhoneFrame.png"
                             alt="Work Glance"
                             className="absolute inset-0 w-full h-full object-contain rounded-xl z-10 pointer-events-none"
                         />

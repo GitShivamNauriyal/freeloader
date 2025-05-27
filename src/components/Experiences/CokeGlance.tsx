@@ -35,7 +35,7 @@ const CokeGlance = () => {
                         >
                             <div className="relative w-64 md:w-72 aspect-[1/2]">
                                 <video
-                                    src={`/assets/video/experiences/coke_glance_1.mp4`}
+                                    src={`/assets/video/experiences/Coke_glance_1_.mp4`}
                                     className="absolute inset-0 left-2 w-[94%] h-full object-cover rounded-4xl z-0"
                                     controls
                                     autoPlay
@@ -44,7 +44,7 @@ const CokeGlance = () => {
                                     playsInline
                                 />
                                 <img
-                                    src="/assets/images/PhoneFrame.png"
+                                    src="/assets/images/iPhoneFrame.png"
                                     alt={`Work Glance`}
                                     className="absolute inset-0 object-contain rounded-xl z-10 pointer-events-none"
                                 />
@@ -68,7 +68,7 @@ const CokeGlance = () => {
                     >
                         <div className="relative w-64 md:w-72 aspect-[1/2]">
                             <video
-                                src={`/assets/video/experiences/coke_glance_2.mp4`}
+                                src={`/assets/video/experiences/Coke_glance_2_.mp4`}
                                 className="absolute inset-0 left-2 w-[94%] h-full object-cover rounded-4xl z-0"
                                 controls
                                 autoPlay
@@ -77,7 +77,7 @@ const CokeGlance = () => {
                                 playsInline
                             />
                             <img
-                                src="/assets/images/PhoneFrame.png"
+                                src="/assets/images/iPhoneFrame.png"
                                 alt={`Work Glance`}
                                 className="absolute inset-0 object-contain rounded-xl z-10 pointer-events-none"
                             />

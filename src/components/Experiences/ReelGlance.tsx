@@ -27,7 +27,7 @@ const ReelGlance = () => {
                     >
                         <div className="relative w-64 md:w-72 aspect-[1/2]">
                             <video
-                                src={`/assets/video/experiences/exp_reel_glance.mp4`}
+                                src={`/assets/video/experiences/Exp_Reel_Glance_.mp4`}
                                 className="absolute inset-0 left-2 w-[94%] h-full object-cover rounded-4xl z-0"
                                 controls
                                 autoPlay
@@ -36,7 +36,7 @@ const ReelGlance = () => {
                                 playsInline
                             />
                             <img
-                                src="/assets/images/PhoneFrame.png"
+                                src="/assets/images/iPhoneFrame.png"
                                 alt={`Work Glance`}
                                 className="absolute inset-0 object-contain rounded-xl z-10 pointer-events-none"
                             />

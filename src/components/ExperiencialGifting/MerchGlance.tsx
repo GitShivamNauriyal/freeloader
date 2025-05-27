@@ -32,7 +32,7 @@ const MerchGlance = () => {
                                 playsInline
                             />
                             <img
-                                src="/assets/images/PhoneFrame.png"
+                                src="/assets/images/iPhoneFrame.png"
                                 alt={`Merch Glance ${num}`}
                                 className="absolute inset-0 object-contain rounded-xl z-10 pointer-events-none"
                             />

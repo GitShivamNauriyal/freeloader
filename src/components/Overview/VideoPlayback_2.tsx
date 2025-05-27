@@ -23,14 +23,14 @@ const OverviewVideoPlayback_2 = () => {
                     initial={{ opacity: 0, y: 40, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.4, ease: "easeOut" }}
-                    className="max-w-4xl text-center text-white font-[200] text-xl sm:text-2xl md:text-4xl tracking-wide leading-5 sm:leading-10"
+                    className="max-w-4xl text-center text-white font-[200] text-xl sm:text-2xl md:text-4xl tracking-wide leading-5 sm:leading-9"
                 >
                     <p>
                         PEOPLE DON’T CONNECT WITH PIXELS{" "}
                         <br className="hidden sm:inline" />
                         THEY CONNECT WITH PRESENCE.
                         <br />
-                        <span className="font-[900] mt-4 lg:mt-6 block">
+                        <span className="font-[900] mt-3 lg:mt-5 block">
                             LET’S MAKE YOUR BRAND PART OF THEIR PHYSICAL WORLD.
                         </span>
                     </p>

@@ -100,7 +100,7 @@ const ExperienceMarketingSection = () => {
                         {/* Rotated Phone Frame */}
                         <div className="absolute inset-0 z-10 pointer-events-none">
                             <img
-                                src="/assets/images/PhoneFrameRotatedRight.png"
+                                src="/assets/images/iPhoneFrameRotatedRight.png"
                                 alt="Work Glance"
                                 className="object-contain rounded-xl"
                             />
@@ -133,7 +133,7 @@ const ExperienceMarketingSection = () => {
                         {/* Rotated Phone Frame */}
                         <div className="absolute inset-0 z-10 pointer-events-none">
                             <img
-                                src="/assets/images/PhoneFrameRotated.png"
+                                src="/assets/images/iPhoneFrameRotated.png"
                                 alt="Work Glance"
                                 className="object-contain rounded-xl"
                             />
