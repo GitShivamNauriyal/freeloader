@@ -18,7 +18,7 @@ const History = () => {
                     SINCE 2009
                     {/* <br /> */}
                     <img
-                        src="/assets/images/spring.png"
+                        src="/assets/images/spring_m.png"
                         alt="Tangible Background Prop"
                         className="ml-1 md:ml-2 w-8 md:w-12 h-8 md:h-12 -translate-y-2 md:-translate-y-4 object-contain z-0 opacity-100 inline"
                     />

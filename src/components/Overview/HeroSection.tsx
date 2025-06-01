@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom"; // React Router link
+import { Link } from "react-router-dom";
 
 const motionSpanProps = {
     initial: { opacity: 0, y: 10 },
@@ -11,16 +11,10 @@ const motionSpanProps = {
 const HeroSection = () => {
     return (
         <div className="flex flex-col items-center justify-center">
-            <motion.main
-                initial={{ filter: "blur(10px)", opacity: 0, y: 20 }}
-                whileInView={{ filter: "blur(0px)", opacity: 1, y: 0 }}
-                transition={{ duration: 0.5 }}
-                viewport={{ once: false, amount: 0.2 }}
-                className="w-full md:min-h-[500px] h-[40vh] lg:h-[100vh] flex flex-col justify-between px-4 lg:px-12 py-10 hero-container"
-            >
+            <main className="relative w-full md:min-h-[500px] h-[40vh] lg:h-[90vh] flex flex-col justify-between px-4 lg:px-12 py-10">
                 <video
                     className="absolute top-0 left-0 w-full h-full object-cover -z-10 -scale-x-100"
-                    src="/assets/video/hero_bg.webm" // ensure this is public or use relative import
+                    src="/assets/video/hero_bg.webm"
                     autoPlay
                     loop
                     muted
@@ -63,7 +57,7 @@ const HeroSection = () => {
                         </motion.span>
                     </p>
                 </div>
-            </motion.main>
+            </main>
 
             <div className="w-screen bg-cyan-400 text-[#5e17eb] font-bold tracking-wider text-center font-[AgrandirWide] py-4 px-4 text-sm sm:text-lg lg:text-2xl">
                 <motion.h2
