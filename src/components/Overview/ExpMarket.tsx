@@ -118,7 +118,7 @@ const ExperienceMarketingSection = () => {
                         duration: 0.6,
                     }}
                 >
-                    <div className="absolute right-[-1rem] top-0 w-[22rem] aspect-[2/1] z-20">
+                    <div className="absolute right-[-1rem] top-0 w-[22rem] aspect-[2/1] z-20 mt-2">
                         {/* Video Layer */}
                         <div className="absolute inset-0 h-[94%] top-2 z-0">
                             <video
@@ -133,7 +133,7 @@ const ExperienceMarketingSection = () => {
                         {/* Rotated Phone Frame */}
                         <div className="absolute inset-0 z-10 pointer-events-none">
                             <img
-                                src="/assets/images/iPhoneFrameRotated.png"
+                                src="/assets/images/iPhoneFrameRotatedRight.png"
                                 alt="Work Glance"
                                 className="object-contain rounded-xl scale-y-105"
                             />

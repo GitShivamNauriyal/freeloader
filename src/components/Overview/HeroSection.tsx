@@ -16,7 +16,7 @@ const HeroSection = () => {
                 whileInView={{ filter: "blur(0px)", opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
                 viewport={{ once: false, amount: 0.2 }}
-                className="w-full md:min-h-[500px] h-[40vh] lg:h-[90vh] flex flex-col justify-between px-4 lg:px-12 py-10 hero-container"
+                className="w-full md:min-h-[500px] h-[40vh] lg:h-[100vh] flex flex-col justify-between px-4 lg:px-12 py-10 hero-container"
             >
                 <video
                     className="absolute top-0 left-0 w-full h-full object-cover -z-10 -scale-x-100"

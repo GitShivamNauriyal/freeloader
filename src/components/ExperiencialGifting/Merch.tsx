@@ -5,29 +5,29 @@ const experiences = [
     {
         title: "HAMPER KITS",
         subtitle: "For Influencers, Employees & Events",
-        image: "/assets/images/merchandise/Picture1.png",
+        image: "/assets/images/merchandise/Picture1.jpg",
     },
     {
         title: "FASHION WEAR",
         subtitle: "T-Shirts, Sneakers, Jackets, Joggers, Accessories and  more",
-        image: "/assets/images/merchandise/Picture2.png",
+        image: "/assets/images/merchandise/Picture2.jpg",
     },
     {
         title: "COLLECTIBLES",
         subtitle:
             "3D Printed, Figures, Patches, Stickers, Enamel, Retro, Magnets, Charms, and a lot more.",
-        image: "/assets/images/merchandise/Picture3.png",
+        image: "/assets/images/merchandise/Picture3.jpg",
     },
     {
         title: "TECH-BASED",
         subtitle:
             "Magnetic, Voice Enabled, Sound boxes, Light boxes, AR VR, and more",
-        image: "/assets/images/merchandise/Picture4.png",
+        image: "/assets/images/merchandise/Picture4.jpg",
     },
     {
         title: "FUNCTIONAL",
         subtitle: "Stationary, Backpacks, Sling bags, Drinkware, & more",
-        image: "/assets/images/merchandise/Picture5.png",
+        image: "/assets/images/merchandise/Picture5.jpg",
     },
 ];
 

@@ -8,7 +8,7 @@ import MerchGlance from "./MerchGlance";
 
 const imageList = Array.from(
     { length: 16 },
-    (_, i) => `../../assets/images/merchandise/gal${i + 1}.png`
+    (_, i) => `../../assets/images/merchandise/gal${i + 1}.jpg`
 );
 
 const page = () => {

@@ -7,17 +7,17 @@ const experiences = [
         title: "CELEBRITIES",
         subtitle:
             "From Bollywood to Youtube, we bring down stars on demand, for your events, collaborations & employee engagement",
-        image: "/assets/images/influencer/Picture1.png",
+        image: "/assets/images/influencer/Picture1.jpg",
     },
     {
         title: "TOP INFLUENCERS",
         subtitle: "Cat A to Cat C, for all your marketing objectives",
-        image: "/assets/images/influencer/Picture2.png",
+        image: "/assets/images/influencer/Picture2.jpg",
     },
     {
         title: "HOSTS",
         subtitle: "Guestlisting Hosts for Parties & events",
-        image: "/assets/images/influencer/Picture3.png",
+        image: "/assets/images/influencer/Picture3.jpg",
     },
 ];
 

@@ -111,7 +111,7 @@ const TangibleGap = () => {
 
                 {/* Mobile: Stack video below text */}
                 <motion.div
-                    className="block md:hidden w-full overflow-hidden"
+                    className="block md:hidden w-full overflow-hidden pt-2"
                     initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
                     transition={{
