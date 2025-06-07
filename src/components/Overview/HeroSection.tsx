@@ -11,9 +11,9 @@ const motionSpanProps = {
 const HeroSection = () => {
     return (
         <div className="flex flex-col items-center justify-center">
-            <main className="relative w-full md:min-h-[500px] h-[40vh] lg:h-[90vh] flex flex-col justify-between px-4 lg:px-12 py-10">
+            <main className="relative w-full md:min-h-[500px] h-[60vh] lg:h-[90vh] flex flex-col justify-between px-4 lg:px-12 py-10">
                 <video
-                    className="absolute top-0 left-0 w-full h-full object-cover -z-10 -scale-x-100"
+                    className="absolute bottom-0 left-0 w-full h-full object-cover -z-10 -scale-x-100"
                     src="/assets/video/hero_bg.webm"
                     autoPlay
                     loop

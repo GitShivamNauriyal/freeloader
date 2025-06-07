@@ -39,7 +39,7 @@ const MidHeading = () => {
                 transition={{ ease: "easeInOut", duration: 0.3, delay: 0.2 }}
                 className="flex flex-col items-center"
             >
-                <a href="">
+                <a href="#merch-glance">
                     <div className="flex flex-col items-center">
                         <div className="flex gap-6 items-center mt-4">
                             <span className="text-[#5e17eb] font-medium font-[freepara] italic">

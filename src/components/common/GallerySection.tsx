@@ -109,8 +109,8 @@ export default function GalleryCarousel({
 
     return (
         <div className="">
-            <section className="max-w-5xl mx-auto px-4 py-12 md:py-20">
-                <h2 className="font-[AgrandirWide] text-3xl md:text-5xl font-semibold text-neutral-100 mb-6">
+            <section className="max-w-5xl mx-auto px-6 py-12 md:py-20">
+                <h2 className="font-[AgrandirWide] text-3xl md:text-5xl font-semibold text-neutral-100 mb-2">
                     {title}
                 </h2>
                 <hr className="border-t border-gray-300 mb-10" />
@@ -123,7 +123,7 @@ export default function GalleryCarousel({
                                 isMobile
                                     ? "grid-cols-2"
                                     : "sm:grid-cols-2 md:grid-cols-4"
-                            } gap-4 auto-rows-[200px] absolute w-full`}
+                            } gap-3 md:gap-4 auto-rows-[200px] absolute w-full`}
                             custom={direction}
                             initial={{
                                 x: direction > 0 ? 300 : -300,
@@ -158,7 +158,7 @@ export default function GalleryCarousel({
                 </div>
 
                 {/* Controls */}
-                <div className="flex justify-center items-center gap-4 mt-12">
+                <div className="flex justify-center items-center gap-4 mt-8 md:mt-12">
                     <button
                         onClick={() => paginate(-1)}
                         disabled={page === 0}

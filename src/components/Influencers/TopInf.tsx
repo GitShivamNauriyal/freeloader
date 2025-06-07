@@ -25,7 +25,7 @@ const TopInfluencers = () => {
     return (
         <section className="w-full pb-16">
             {/* Top Section: Heading and Text */}
-            <div className="grid grid-cols-1 mt-16 md:grid-cols-2 gap-2 lg:gap-0 px-4 md:px-16 max-w-screen-xl mx-auto relative">
+            <div className="grid grid-cols-1 mt-[72px] md:grid-cols-2 gap-2 lg:gap-0 px-6 md:px-16 max-w-screen-xl mx-auto relative">
                 {/* Background Prop Image */}
                 <img
                     src="/assets/images/TangibleBgProp.png"
@@ -69,7 +69,7 @@ const TopInfluencers = () => {
             </div>
 
             {/* Grid of Influencer Types */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-6 px-4 md:px-16 mt-12 max-w-screen-xl mx-auto">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 lg:gap-6 px-6 md:px-16 mt-10 lg:mt-12 max-w-screen-xl mx-auto">
                 {experiences.map((item, index) => (
                     <motion.div
                         key={index}

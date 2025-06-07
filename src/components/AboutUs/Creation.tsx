@@ -6,7 +6,7 @@ const Creation = () => {
     return (
         <div>
             <div className="wavy-background">
-                <section className="max-w-7xl mx-auto gap-8 px-4 sm:px-6 md:px-20 py-16 text-white">
+                <section className="max-w-7xl mx-auto gap-8 px-6 sm:px-6 md:px-20 py-16 text-white">
                     {/* Heading */}
                     <motion.h2
                         initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}

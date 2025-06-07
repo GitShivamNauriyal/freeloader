@@ -2,10 +2,15 @@
 
 import { motion } from "framer-motion";
 import { HeroHighlight } from "./DottedHighlight";
+import { FiSearch } from "react-icons/fi"; // DEEP RESEARCH
+import { BsPalette } from "react-icons/bs"; // DESIGNING
+import { TbSettingsCog } from "react-icons/tb"; // PROTOTYPING
+import { BsRocketTakeoff } from "react-icons/bs"; // EXECUTION
 
 const steps = [
     {
         title: "DEEP RESEARCH",
+        icon: <FiSearch className="text-white text-3xl mb-2" />,
         content1:
             "Inspired by your brief, our team dives deep into researching all feasible aspects of probable possibilities leading to logical conclusion, that fits best to meet the timelines and quality expectation.",
         content2:
@@ -13,16 +18,19 @@ const steps = [
     },
     {
         title: "DESIGNING",
+        icon: <BsPalette className="text-white text-3xl mb-2" />,
         content1:
             "Our designers use latest tools available in the market to create references and mockups that are not just aesthetically pleasing but also provide a clear direction for the project.",
     },
     {
         title: "PROTOTYPING",
+        icon: <TbSettingsCog className="text-white text-3xl mb-2" />,
         content1:
             "With the help of 3D printing, machinery, digital offset, Laser, enamel etching and other technologies, we create a physical sample that is 99% identical to the design mockup.",
     },
     {
         title: "EXECUTION",
+        icon: <BsRocketTakeoff className="text-white text-3xl mb-2" />,
         content1:
             "As per your feedback and approval, after multiple samples, we move into final production of the desired Experience, bringing your marketing objective into the tangible world.",
     },
@@ -147,9 +155,11 @@ const Process = () => {
                                                     <>
                                                         <div className="w-1/2 pr-2 md:pr-8 text-right font-[freepara]">
                                                             <div className="inline-block text-left">
-                                                                <h3 className=" font-[AgrandirWide] text-xl lg:text-2xl font-medium md:font-bold mb-2 leading-tight">
+                                                                <h3 className="font-[AgrandirWide] text-xl lg:text-2xl font-medium md:font-bold mb-2 leading-tight flex flex-col">
+                                                                    {step.icon}
                                                                     {step.title}
                                                                 </h3>
+
                                                                 {/* <div className="hidden md:block">
                                                                     <p className="opacity-80 mb-2">
                                                                         {step.content1}
@@ -242,9 +252,11 @@ const Process = () => {
 
                                                         <div className="w-1/2 pl-4 lg:pl-8 text-left font-[freepara]">
                                                             <div>
-                                                                <h3 className="font-[AgrandirWide] text-xl md:text-2xl font-medium md:font-bold mb-2">
+                                                                <h3 className="font-[AgrandirWide] text-xl lg:text-2xl font-medium md:font-bold mb-2 leading-tight flex flex-col">
+                                                                    {step.icon}
                                                                     {step.title}
                                                                 </h3>
+
                                                                 {/* <div className="hidden md:block">
                                                             <p className="opacity-80 mb-2">
                                                                 {step.content1}

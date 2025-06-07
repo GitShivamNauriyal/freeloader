@@ -18,15 +18,16 @@ const Navbar = () => {
     return (
         <nav className="fixed w-screen bg-black/30 backdrop-blur-md z-[999]">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between items-center h-16">
+                <div className="flex justify-between items-center h-[72px]">
                     {/* Logo */}
                     <div className="flex-shrink-0 font-[AgrandirWide]">
                         <Link
                             to="/"
                             className="text-white text-xl font-extrabold"
                         >
-                            <div className="translate-y-1">FREE</div>
-                            <div className="-translate-y-1">LOADER</div>
+                            <div className="translate-y-2">FREE</div>
+                            <div className="-translate-y-0">LOADER</div>
+                            <div className="-translate-y-2">AGENCY</div>
                         </Link>
                         {/* <Link
                             to="/"
@@ -87,9 +88,9 @@ const Navbar = () => {
                     <motion.div
                         initial={{ opacity: 0, y: -10 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -10 }}
+                        exit={{ opacity: 0, y: 0 }}
                         transition={{ duration: 0.3 }}
-                        className=" font-bold md:hidden bg-[#5e17eb]/90 backdrop-blur-md absolute top-16 left-0 w-full px-4 py-4 space-y-2 z-[998] uppercase"
+                        className=" font-bold md:hidden bg-[#5e17eb]/90 backdrop-blur-md absolute top-[72px] left-0 w-full px-4 py-4 space-y-2 z-[998] uppercase"
                     >
                         {menuItems.map(({ label, path }, i) => (
                             <motion.div

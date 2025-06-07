@@ -42,7 +42,7 @@ const Merchandise = () => {
     return (
         <section className="w-full pb-16">
             {/* Top Section */}
-            <div className="grid grid-cols-1 lg:grid-cols-3 mt-16 gap-4 md:gap-6 lg:gap-0 px-6 md:px-16 max-w-screen-xl mx-auto">
+            <div className="grid grid-cols-1 lg:grid-cols-3 mt-[72px] gap-4 md:gap-6 lg:gap-0 px-6 md:px-16 max-w-screen-xl mx-auto">
                 {/* Title */}
                 <motion.div
                     className="flex lg:col-span-2 items-start md:items-center justify-start relative"
