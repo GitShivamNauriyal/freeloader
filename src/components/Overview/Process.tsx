@@ -2,7 +2,9 @@
 
 import { motion } from "framer-motion";
 import { HeroHighlight } from "./DottedHighlight";
-import { FiSearch } from "react-icons/fi"; // DEEP RESEARCH
+import { RiSearchEyeLine } from "react-icons/ri"; // DEEP RESEARCH
+// import { GiMagnifyingGlass } from "react-icons/gi";
+
 import { BsPalette } from "react-icons/bs"; // DESIGNING
 import { TbSettingsCog } from "react-icons/tb"; // PROTOTYPING
 import { BsRocketTakeoff } from "react-icons/bs"; // EXECUTION
@@ -10,7 +12,7 @@ import { BsRocketTakeoff } from "react-icons/bs"; // EXECUTION
 const steps = [
     {
         title: "DEEP RESEARCH",
-        icon: <FiSearch className="text-white text-3xl mb-2" />,
+        icon: <RiSearchEyeLine className="text-white text-3xl mb-2" />,
         content1:
             "Inspired by your brief, our team dives deep into researching all feasible aspects of probable possibilities leading to logical conclusion, that fits best to meet the timelines and quality expectation.",
         content2:
