@@ -29,7 +29,7 @@ const BrandExperiences = () => {
     return (
         <section className="w-full pb-16">
             {/* Top Section */}
-            <div className="grid grid-cols-1 my-16 lg:grid-cols-2 gap-6 lg:gap-8 px-4 md:px-16 max-w-screen-xl mx-auto relative">
+            <div className="grid grid-cols-1 my-16 lg:grid-cols-2 gap-4 md:gap-6 lg:gap-8 px-6 md:px-16 max-w-screen-xl mx-auto relative">
                 <img
                     src="/assets/images/TangibleBgProp.png"
                     alt="Tangible Background Prop"
@@ -69,7 +69,7 @@ const BrandExperiences = () => {
             </div>
 
             {/* Bottom Section: Cards */}
-            <div className="font-[freepara] grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6 px-4 md:px-16 mt-12 max-w-screen-xl mx-auto">
+            <div className="font-[freepara] grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2 lg:gap-6 px-4 md:px-16 mt-0 md:mt-12 max-w-screen-xl mx-auto">
                 {experiences.map((item, index) => (
                     <motion.div
                         key={index}
@@ -83,10 +83,10 @@ const BrandExperiences = () => {
                             alt={item.title}
                             className="w-full h-auto object-cover rounded-md"
                         />
-                        <h3 className="text-lg freeheading font-bold mt-4 pl-2">
+                        <h3 className="text-md md:text-lg freeheading font-bold mt-3 md:mt-4 px-1 md:pl-2 md:pr-0">
                             {item.title}
                         </h3>
-                        <p className="text-sm opacity-80 pl-2">
+                        <p className="text-xs md:text-sm opacity-80 px-1 md:pl-2">
                             {item.subtitle}
                         </p>
                     </motion.div>

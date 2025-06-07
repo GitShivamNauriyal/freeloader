@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 const ExperienceMarketingSection = () => {
     return (
-        <div className="w-full bg-white pt-20 md:py-20 p-4 pr-0 md:px-4 overflow-hidden">
+        <div className="w-full bg-white pt-20 md:py-20 p-6 pr-0 md:px-4 overflow-hidden">
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 md:gap-8 relative">
                 {/* Left Content */}
                 <motion.div
                     initial={{ opacity: 0, x: -30, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
-                    className="max-w-2xl md:w-2/3 relative font-[freepara] z-10 mr-4 md:mr-0"
+                    className="max-w-2xl md:w-2/3 relative font-[freepara] z-10 mr-6 md:mr-0"
                 >
                     {/* Background Prop Image */}
                     <img
@@ -114,11 +114,11 @@ const ExperienceMarketingSection = () => {
                     initial={{ opacity: 0, x: 80, filter: "blur(10px)" }}
                     whileInView={{ opacity: 1, x: 0, filter: "blur(0)" }}
                     transition={{
-                        ease: "easeIn",
+                        ease: "easeInOut",
                         duration: 0.6,
                     }}
                 >
-                    <div className="absolute right-[-1rem] top-0 w-[22rem] aspect-[2/1] z-20 mt-2">
+                    <div className="absolute right-[-2rem] top-0 w-[22rem] aspect-[2/1] z-20 mt-2">
                         {/* Video Layer */}
                         <div className="absolute inset-0 h-[94%] top-2 z-0">
                             <video

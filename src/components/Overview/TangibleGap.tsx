@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const TangibleGap = () => {
     return (
-        <div className="bg-white w-full pt-24 pb-0 md:py-24 px-4 overflow-hidden">
+        <div className="bg-white w-full pt-24 pb-0 md:py-24 px-6 overflow-hidden">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8 relative">
                 {/* Text Content */}
                 <motion.div
@@ -119,7 +119,7 @@ const TangibleGap = () => {
                         duration: 0.6,
                     }}
                 >
-                    <div className="relative mx-auto w-64 aspect-[1/2] -mb-16">
+                    <div className="relative mx-auto w-64 aspect-[1/2] -mb-36 md:-mb-16">
                         <video
                             src={`/assets/video/tangible_gap.mp4`}
                             className="absolute inset-0 w-[93%] left-2 h-full object-cover rounded-4xl z-0"

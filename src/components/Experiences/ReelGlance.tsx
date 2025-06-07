@@ -5,17 +5,17 @@ const ReelGlance = () => {
     return (
         <div className="border-t-2 border-white wavy-background pt-8 lg:py-16 relative font-[AgrandirWide]">
             <div className="flex md:flex-row flex-col items-center justify-center h-full px-4 md:px-16 lg:px-32 xl:px-64">
-                <div className="w-full mt-6 flex justify-center lg:justify-start mb-6">
+                <div
+                    id="exp-reel"
+                    className="w-full mt-6 flex justify-center lg:justify-start mb-6"
+                >
                     <span className="text-white text-3xl sm:text-5xl lg:text-6xl font-bold freeheading">
                         Quick glance at
                         <span className="block">our recent work</span>
                     </span>
                 </div>
 
-                <div
-                    id="exp-reel"
-                    className="relative w-full max-w-72 aspect-[9/18] lg:mx-16"
-                >
+                <div className="relative w-full max-w-72 aspect-[9/18] lg:mx-16">
                     <motion.div
                         className="flex flex-col items-center overflow-visible"
                         initial={{ opacity: 0, y: 20, filter: "blur(10px)" }}

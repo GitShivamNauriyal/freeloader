@@ -1,6 +1,7 @@
-import { useState, useMemo, useEffect } from "react";
+import { useState, useMemo, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { X } from "lucide-react";
 
 // Utility to chunk array
 function chunkArray<T>(array: T[], chunkSize: number): T[][] {
@@ -71,6 +72,23 @@ export default function GalleryCarousel({
     const [page, setPage] = useState(0);
     const [direction, setDirection] = useState(0);
     const isMobile = useMediaQuery("(max-width: 640px)");
+    const [showScrollView, setShowScrollView] = useState(false);
+    const [activeIndex, setActiveIndex] = useState<number | null>(null);
+    const scrollRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        if (showScrollView && activeIndex !== null && scrollRef.current) {
+            const target = scrollRef.current.children[
+                activeIndex
+            ] as HTMLElement;
+            if (target) {
+                scrollRef.current.scrollTo({
+                    top: target.offsetTop,
+                    behavior: "smooth",
+                });
+            }
+        }
+    }, [showScrollView, activeIndex]);
 
     const imageSlides = useMemo(
         () => chunkArray(images, imagesPerSlide),
@@ -126,6 +144,12 @@ export default function GalleryCarousel({
                                         src={src}
                                         alt={`Gallery ${index + 1}`}
                                         className="w-full h-full object-cover"
+                                        onClick={() => {
+                                            setActiveIndex(
+                                                page * imagesPerSlide + index
+                                            );
+                                            setShowScrollView(true);
+                                        }}
                                     />
                                 </div>
                             ))}
@@ -154,6 +178,59 @@ export default function GalleryCarousel({
                         <ChevronRight />
                     </button>
                 </div>
+                <AnimatePresence>
+                    {showScrollView && (
+                        <motion.div
+                            className="fixed inset-0 z-50 bg-black/50 backdrop-blur-sm flex items-center justify-center p-4"
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            onClick={() => setShowScrollView(false)} // Close on backdrop click
+                        >
+                            <motion.div
+                                className={`bg-white rounded-xl overflow-y-scroll scroll-smooth relative ${
+                                    isMobile
+                                        ? "w-[80vw] h-[80vh]"
+                                        : "w-[50vw] h-[80vh]"
+                                }`}
+                                initial={{ opacity: 0, scale: 0.9, y: 50 }}
+                                animate={{ opacity: 1, scale: 1, y: 0 }}
+                                exit={{ opacity: 0, scale: 0.9, y: 50 }}
+                                transition={{ duration: 0.3, ease: "easeOut" }}
+                                onClick={(e) => e.stopPropagation()} // Prevent close on inner click
+                                ref={scrollRef}
+                            >
+                                {/* Close Button (absolute inside modal) */}
+                                <button
+                                    onClick={() => setShowScrollView(false)}
+                                    className="absolute top-4 right-4 z-50 bg-black text-white p-2 rounded-full shadow-lg hover:bg-gray-800 transition"
+                                >
+                                    <X size={20} />
+                                </button>
+
+                                {/* Image container */}
+                                <div
+                                    className={`p-6 gap-4 ${
+                                        isMobile
+                                            ? "flex flex-col"
+                                            : "flex flex-wrap justify-between"
+                                    }`}
+                                >
+                                    {images.map((src, idx) => (
+                                        <img
+                                            key={idx}
+                                            src={src}
+                                            alt={`Full ${idx + 1}`}
+                                            className={`rounded-md mb-4 max-w-full h-auto object-cover ${
+                                                isMobile ? "w-full" : "w-[48%]"
+                                            }`}
+                                        />
+                                    ))}
+                                </div>
+                            </motion.div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
             </section>
         </div>
     );

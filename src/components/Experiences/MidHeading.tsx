@@ -1,5 +1,4 @@
 "use client";
-import { Link } from "react-router-dom";
 // import { FaArrowDown } from "react-icons/fa";
 import { motion } from "framer-motion";
 
@@ -18,7 +17,7 @@ const MidHeading = () => {
             </motion.h1>
 
             {/* Arrow and "Showreel" text */}
-            <Link to="#exp-reel">
+            <a href="#exp-reel">
                 <div className="mt-0 md:mt-6 flex flex-col items-center">
                     <div className="flex gap-6 items-center mt-4 lg:mt-6">
                         <span className="text-[#5e17eb] font-medium mb-">
@@ -44,7 +43,7 @@ const MidHeading = () => {
                         </div>
                     </div>
                 </div>
-            </Link>
+            </a>
         </div>
     );
 };
