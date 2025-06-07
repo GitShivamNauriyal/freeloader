@@ -8,7 +8,7 @@ const menuItems = [
     { label: "experiencial gifting", path: "/experiencial-gifting" },
     { label: "influencers", path: "/influencers" },
     { label: "about us", path: "/about-us" },
-    { label: "blogs", path: "/blogs" },
+    // { label: "blogs", path: "/blogs" },
 ];
 
 const Navbar = () => {
