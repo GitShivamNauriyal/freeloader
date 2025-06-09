@@ -55,7 +55,7 @@ const TopInfluencers = () => {
                     transition={{ duration: 0.6, delay: 0.1 }}
                     className="flex flex-col justify-center text-white text-sm md:text-base font-[freepara]"
                 >
-                    <p className="text-base mb-4">
+                    <p className="text-base mb-4 leading-tight">
                         We work closely with influencers from various fields,
                         for your Social Media campaigns, events, parties,
                         endorsement, shoots & more.

@@ -29,7 +29,7 @@ const HeroSection = () => {
                         <br />
                         AGENCY
                     </h1>
-                    <p className="text-sm sm:text-lg font-light tracking-wide text-gray-300 mt-2 font-[freeheading] flex flex-wrap gap-1">
+                    <p className="text-sm sm:text-lg font-light tracking-wide text-gray-200 mt-2 font-[freeheading] flex flex-wrap gap-1">
                         <motion.span {...motionSpanProps}>
                             <Link to="/experiences">EXPERIENCES</Link>
                         </motion.span>
