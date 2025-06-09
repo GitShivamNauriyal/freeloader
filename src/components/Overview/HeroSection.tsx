@@ -1,17 +1,18 @@
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
-const motionSpanProps = {
-    initial: { opacity: 0, y: 10 },
-    whileInView: { opacity: 1, y: 0 },
-    transition: { duration: 0.5 },
-    viewport: { once: false },
-};
+//error in these three lines
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+
+import { HeroFirstSlide, HeroSecondSlide, HeroThirdSlide } from "./Slides";
 
 const HeroSection = () => {
     return (
         <div className="flex flex-col items-center justify-center">
-            <main className="relative w-full md:min-h-[500px] h-[60vh] lg:h-[90vh] flex flex-col justify-between px-4 lg:px-12 py-10">
+            <main className="relative w-full md:min-h-[500px] h-[60vh] lg:h-[90vh] flex flex-col justify-between px-4 lg:px-12 py-8">
                 <video
                     className="absolute bottom-0 left-0 w-full h-full object-cover -z-10 -scale-x-100"
                     src="/assets/video/hero_bg.webm"
@@ -20,43 +21,28 @@ const HeroSection = () => {
                     muted
                     playsInline
                 />
-                <div /> {/* Spacer */}
-                <div className="text-left pl-2 md:pl-8">
-                    <h1 className="z-10 text-5xl sm:text-8xl md:text-9xl lg:text-[8rem] font-[900] leading-[0.9] tracking-[0.1rem] text-white font-[AgrandirHeavy]">
-                        FREE
-                        <br />
-                        LOADER
-                        <br />
-                        AGENCY
-                    </h1>
-                    <p className="text-sm sm:text-lg font-light tracking-wide text-gray-200 mt-2 font-[freeheading] flex flex-wrap gap-1">
-                        <motion.span {...motionSpanProps}>
-                            <Link to="/experiences">EXPERIENCES</Link>
-                        </motion.span>
-                        <span className="mx-1">•</span>
-                        <motion.span
-                            {...motionSpanProps}
-                            transition={{
-                                ...motionSpanProps.transition,
-                                delay: 0.3,
-                            }}
-                        >
-                            <Link to="/experiencial-gifting">
-                                EXPERIENCIAL GIFTING
-                            </Link>
-                        </motion.span>
-                        <span className="mx-1">•</span>
-                        <motion.span
-                            {...motionSpanProps}
-                            transition={{
-                                ...motionSpanProps.transition,
-                                delay: 0.6,
-                            }}
-                        >
-                            <Link to="/influencers">INFLUENCERS</Link>
-                        </motion.span>
-                    </p>
-                </div>
+
+                <Swiper
+                    modules={[Autoplay, Navigation, Pagination]}
+                    spaceBetween={0}
+                    slidesPerView={1}
+                    loop={true}
+                    // autoplay={false}
+                    autoplay={{ delay: 6000, disableOnInteraction: false }}
+                    navigation
+                    pagination={{ clickable: true }}
+                    className="w-full h-full"
+                >
+                    <SwiperSlide>
+                        <HeroFirstSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <HeroSecondSlide />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <HeroThirdSlide />
+                    </SwiperSlide>
+                </Swiper>
             </main>
 
             <div className="w-screen bg-cyan-400 text-[#5e17eb] font-bold tracking-wider text-center font-[AgrandirWide] py-4 px-4 text-sm sm:text-lg lg:text-2xl">
