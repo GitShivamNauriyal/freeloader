@@ -23,7 +23,7 @@ const Navbar = () => {
                     <div className="flex-shrink-0 font-[AgrandirHeavy]">
                         <Link
                             to="/"
-                            className="text-white text-xl font-extrabold"
+                            className="text-white text-md font-extrabold"
                         >
                             <div className="translate-y-2">FREE</div>
                             <div className="-translate-y-0">LOADER</div>

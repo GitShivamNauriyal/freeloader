@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 
@@ -11,10 +11,18 @@ import { HeroFirstSlide, HeroSecondSlide, HeroThirdSlide } from "./Slides";
 const HeroSection = () => {
     return (
         <div className="flex flex-col items-center justify-center">
-            <main className="relative w-full md:min-h-[500px] h-[60vh] lg:h-[90vh] flex flex-col justify-between px-4 lg:px-12 py-8">
+            <main className="relative w-full md:min-h-[500px] h-[80vh] lg:h-[90vh] flex flex-col justify-between px-4 lg:px-12 py-8">
                 <video
-                    className="absolute bottom-0 left-0 w-full h-full object-cover -z-10 -scale-x-100"
+                    className="absolute bottom-0 left-0 w-full h-full object-cover -z-10 -scale-x-100 hidden md:block"
                     src="/assets/video/hero_bg.webm"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                />
+                <video
+                    className="absolute bottom-0 left-0 w-full h-full object-cover -z-10 -scale-y-100 -scale-x-100 visible md:hidden"
+                    src="/assets/video/output_compressed.webm"
                     autoPlay
                     loop
                     muted
@@ -28,7 +36,6 @@ const HeroSection = () => {
                     loop={true}
                     // autoplay={false}
                     autoplay={{ delay: 6000, disableOnInteraction: false }}
-                    navigation
                     pagination={{ clickable: true }}
                     className="w-full h-full"
                 >
@@ -45,14 +52,16 @@ const HeroSection = () => {
             </main>
 
             <div className="w-screen bg-cyan-400 text-[#5e17eb] font-bold tracking-wider text-center font-[AgrandirWide] py-4 px-4 text-sm sm:text-lg lg:text-2xl">
-                <motion.h2
+                {/* <motion.h2
                     initial={{ x: 20, filter: "blur(10px)" }}
                     whileInView={{ x: 0, filter: "blur(0px)" }}
                     transition={{ ease: "easeIn", duration: 0.4 }}
-                >
+                > */}
+                <h2>
                     16+ YEAR JOURNEY • 500+ EXPERIENCES DELIVERED • OVER 60
                     BRANDS
-                </motion.h2>
+                </h2>
+                {/* </motion.h2> */}
             </div>
         </div>
     );
