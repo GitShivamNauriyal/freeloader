@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const TangibleGap = () => {
     return (
-        <div className="bg-white w-full pt-24 pb-0 md:py-24 px-6 overflow-hidden">
+        <div className="bg-white w-full pt-16 md:pt-24 pb-0 md:py-24 px-6 overflow-hidden">
             <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-start md:items-center justify-between gap-8 relative">
                 {/* Text Content */}
                 <motion.div
