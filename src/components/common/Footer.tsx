@@ -5,6 +5,7 @@ import {
     FaXTwitter,
     FaFacebookF,
 } from "react-icons/fa6";
+import axios from "axios";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
@@ -58,6 +59,52 @@ export default function Footer() {
     const [errors, setErrors] = useState<FormErrors>({});
     const [touched, setTouched] = useState<TouchedFields>({});
     const [submitted, setSubmitted] = useState(false);
+    const [success, setSuccess] = useState(false);
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setTouched({
+            name: true,
+            email: true,
+            subject: true,
+            message: true,
+        });
+        if (validate()) {
+            setSubmitted(true);
+            setSuccess(false);
+            try {
+                await axios.post(
+                    "https://freeloader-email-api.onrender.com/sendfeedback",
+                    {
+                        name: form.name,
+                        email: form.email,
+                        subject: form.subject,
+                        message: form.message,
+                    }
+                );
+                setSuccess(true);
+                setSubmitted(false);
+                // Optionally reset form fields here
+                setForm({
+                    name: "",
+                    email: "",
+                    subject: "",
+                    message: "",
+                });
+                setTouched({});
+                setErrors({});
+                // Optionally close modal after delay
+                setTimeout(() => {
+                    setIsOpen(false);
+                    setSuccess(false);
+                }, 2000);
+            } catch (error) {
+                setSubmitted(false);
+                setSuccess(false);
+                // Optionally show error message
+            }
+        }
+    };
 
     const validate = (fieldValues: Partial<FormData> = form): boolean => {
         let temp: FormErrors = {};
@@ -102,30 +149,30 @@ export default function Footer() {
         validate({ [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        setTouched({
-            name: true,
-            email: true,
-            subject: true,
-            message: true,
-        });
-        if (validate()) {
-            setSubmitted(true);
-            setTimeout(() => {
-                setSubmitted(false);
-                setIsOpen(false);
-                setForm({
-                    name: "",
-                    email: "",
-                    subject: "",
-                    message: "",
-                });
-                setTouched({});
-                setErrors({});
-            }, 1500);
-        }
-    };
+    // const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    //     e.preventDefault();
+    //     setTouched({
+    //         name: true,
+    //         email: true,
+    //         subject: true,
+    //         message: true,
+    //     });
+    //     if (validate()) {
+    //         setSubmitted(true);
+    //         setTimeout(() => {
+    //             setSubmitted(false);
+    //             setIsOpen(false);
+    //             setForm({
+    //                 name: "",
+    //                 email: "",
+    //                 subject: "",
+    //                 message: "",
+    //             });
+    //             setTouched({});
+    //             setErrors({});
+    //         }, 1500);
+    //     }
+    // };
 
     // Animation variants
     const backdropVariants = {
@@ -303,7 +350,11 @@ export default function Footer() {
                                     </button>
                                     <button
                                         type="submit"
-                                        className="bg-white text-[#5e17eb] font-bold py-2 px-6 rounded-md hover:bg-white/90 transition"
+                                        className={`bg-white text-[#5e17eb] font-bold py-2 px-6 rounded-md transition ${
+                                            submitted
+                                                ? "opacity-60 cursor-not-allowed"
+                                                : "hover:bg-white/90"
+                                        }`}
                                         disabled={submitted}
                                     >
                                         {submitted
@@ -311,10 +362,14 @@ export default function Footer() {
                                             : "Send Message"}
                                     </button>
                                 </div>
-                                {submitted && (
+                                {success && (
                                     <div className="text-green-400 text-center pt-2">
-                                        Message sent! (not really, this is a
-                                        demo)
+                                        Message sent successfully!
+                                    </div>
+                                )}
+                                {submitted && !success && (
+                                    <div className="text-blue-400 text-center pt-2">
+                                        Sending your message...
                                     </div>
                                 )}
                             </form>

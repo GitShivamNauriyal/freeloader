@@ -56,7 +56,7 @@ const TangibleGap = () => {
                     <motion.p
                         initial={{ opacity: 0, x: -20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
-                        transition={{ duration: 0.5, ease: "easeOut" }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
                         className="mt-2 md:mt-4 text-neutral-700 text-sm md:text-lg leading-4 md:leading-tight"
                     >
                         Instead of reactive & ad-hoc solutions to reconnect with
@@ -68,7 +68,7 @@ const TangibleGap = () => {
                     <motion.p
                         initial={{ opacity: 0, x: -20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
-                        transition={{ duration: 0.5, ease: "easeOut" }}
+                        transition={{ duration: 0.7, ease: "easeOut" }}
                         className="mt-2 md:mt-4 text-neutral-700 font-[freepara] text-sm md:text-lg leading-4 md:leading-tight"
                     >
                         Since 2009, we at FIC have constantly evolved towards

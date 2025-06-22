@@ -9,7 +9,7 @@ const motionSpanProps = {
 };
 
 export const HeroFirstSlide = () => (
-    <div className="flex flex-col justify-between h-full w-full">
+    <div className="flex flex-col justify-between h-full w-full  px-4 lg:px-12 py-8">
         <div />
         <div className="text-left pl-2 md:pl-8 flex ">
             <div>
@@ -53,12 +53,33 @@ export const HeroFirstSlide = () => (
 );
 
 export const HeroSecondSlide = () => (
-    <div className="text-white text-center w-full h-full flex items-center justify-center">
-        <h1 className="text-4xl">Demo Content - Slide 2</h1>
+    <div
+        className="text-white text-center w-full h-full flex items-center justify-center"
+        style={{
+            backgroundImage: "url(/assets/images/demo1.png",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+        }}
+    >
+        <h1 className="text-4xl md:text-6xl font-bold max-w-3xl mx-auto">
+            Your Business. Our Services. One Reliable Partner —{" "}
+            <span className="text-[#5e17eb]">Freeloader.</span>
+        </h1>
     </div>
 );
+
 export const HeroThirdSlide = () => (
-    <div className="text-white text-center w-full h-full flex items-center justify-center">
-        <h1 className="text-4xl">Demo Content - Slide 3</h1>
+    <div
+        className="text-white text-center w-full h-full flex items-center justify-center"
+        style={{
+            backgroundImage: "url(/assets/images/demo2.png",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+        }}
+    >
+        <h1 className="text-4xl md:text-6xl font-bold max-w-3xl mx-auto">
+            Simplifying Success —{" "}
+            <span className="text-[#6e26ff]">One Service at a Time.</span>
+        </h1>
     </div>
 );
