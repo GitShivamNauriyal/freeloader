@@ -74,7 +74,7 @@ export default function Footer() {
             setSuccess(false);
             try {
                 await axios.post(
-                    "https://freeloader-email-api.onrender.com/sendfeedback",
+                    "https://freeloader-email-api-1.onrender.com/sendfeedback",
                     {
                         name: form.name,
                         email: form.email,
