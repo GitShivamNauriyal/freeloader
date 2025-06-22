@@ -7,8 +7,8 @@ const ExperienceMarketingSection = () => {
             <div className="max-w-6xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-4 md:gap-8 relative">
                 {/* Left Content */}
                 <motion.div
-                    initial={{ opacity: 0, x: -30, filter: "blur(10px)" }}
-                    whileInView={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+                    initial={{ opacity: 0, x: -30 }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.3, ease: "easeOut" }}
                     className="max-w-2xl md:w-2/3 relative font-[freepara] z-10 mr-6 md:mr-0"
                 >
@@ -16,7 +16,7 @@ const ExperienceMarketingSection = () => {
                     <img
                         src="/assets/images/TangibleBgProp.png"
                         alt="Tangible Background Prop"
-                        className="absolute -top-10 md:-top-16 -left-16 md:-left-32 w-28 md:w-52 h-28 md:h-52 object-contain z-0 opacity-100"
+                        className="absolute -top-10 md:-top-16 -left-16 md:-left-32 w-28 md:w-52 h-28 md:h-52 object-contain -z-10 opacity-100"
                     />
 
                     {/* Heading Block */}
@@ -24,7 +24,7 @@ const ExperienceMarketingSection = () => {
                         initial={{ opacity: 0, y: -20, filter: "blur(10px)" }}
                         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
                         transition={{ duration: 0.5, ease: "easeOut" }}
-                        className="text-3xl md:text-6xl font-extrabold text-black/80 leading-8 md:leading-[4rem] mb-6 z-10 font-[AgrandirHeavy]"
+                        className="text-3xl md:text-6xl font-extrabold text-black/80 leading-8 md:leading-[4rem] mb-6 z-50 font-[AgrandirHeavy]"
                     >
                         <div className="relative inline-block z-10">
                             <span>EXPERIENCE</span>
@@ -76,8 +76,8 @@ const ExperienceMarketingSection = () => {
                 {/* Desktop: Video absolutely positioned to the right */}
                 <motion.div
                     className="hidden lg:block absolute right-[-7rem] top-1/2 -translate-y-1/2 z-20"
-                    initial={{ opacity: 0, x: 80, filter: "blur(10px)" }}
-                    whileInView={{ opacity: 1, x: 0, filter: "blur(0)" }}
+                    initial={{ opacity: 0, x: 80 }}
+                    whileInView={{ opacity: 1, x: 0 }}
                     transition={{
                         ease: "easeIn",
                         duration: 0.6,
