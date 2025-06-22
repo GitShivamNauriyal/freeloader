@@ -56,7 +56,7 @@ export const HeroSecondSlide = () => (
     <div
         className="text-white text-center w-full h-full flex items-center justify-center"
         style={{
-            backgroundImage: "url(/assets/images/demo1.png",
+            backgroundImage: "url(/assets/images/demo1.jpg",
             backgroundSize: "cover",
             backgroundPosition: "center",
         }}
@@ -72,7 +72,7 @@ export const HeroThirdSlide = () => (
     <div
         className="text-white text-center w-full h-full flex items-center justify-center"
         style={{
-            backgroundImage: "url(/assets/images/demo2.png",
+            backgroundImage: "url(/assets/images/demo2.jpg",
             backgroundSize: "cover",
             backgroundPosition: "center",
         }}
